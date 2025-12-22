@@ -268,11 +268,11 @@ export default function Navbar() {
                   className="relative group"
                 >
                   <button
-                    className={`nav-link relative ${
-                      isWhiteMode ? "text-secondary" : (isHighlight ? "text-secondary" : "text-primary")
+                    className={`nav-link  relative ${
+                      isWhiteMode ? "text-primary" : (isHighlight ? "text-primary" : "text-primary")
                     } text-xs sm:text-sm lg:text-sm font-sans ease-in-out duration-500 flex items-center gap-1 whitespace-nowrap px-3 py-2 rounded-lg transition-all hover:bg-white/5 hover:backdrop-blur-sm ${
                       isPageActive(item) ? "active-page" : ""
-                    } group-hover/nav:text-secondary hover:text-secondary ${hoveredLink === index ? "scale-105" : "hover:scale-105"}`}
+                    } group-hover/nav:text-primary hover:text-primary ${hoveredLink === index ? "scale-105" : "hover:scale-105"}`}
                   >
                     <Link href={item.href} className="block relative z-10">
                       {item.label}
@@ -281,7 +281,7 @@ export default function Navbar() {
                     {/* Enhanced Dropdown Arrow */}
                     {item.dropdown?.length > 0 && (
                       <IoChevronDown
-                        className={`text-xs sm:text-sm ${isWhiteMode ? "text-secondary" : (isHighlight ? "text-secondary" : "text-primary")} group-hover/nav:text-secondary transition-all duration-500 flex-shrink-0 relative z-10 ${
+                        className={`text-xs sm:text-sm ${isWhiteMode ? "text-primary" : (isHighlight ? "text-primary" : "text-primary")} group-hover/nav:text-primary transition-all duration-500 flex-shrink-0 relative z-10 ${
                           isDropdownOpen === index 
                             ? "rotate-180 scale-125" 
                             : "rotate-0 group-hover:scale-125"
@@ -313,7 +313,7 @@ export default function Navbar() {
               <div className="relative inline-block p-0.5 rounded-none overflow-hidden magnetic-btn hover:scale-110 transition-all duration-300 active:scale-95">
                 <button
                   type="button"
-                  className="relative z-10 bg-secondary group-hover/nav:bg-primary text-primary group-hover/nav:text-secondary rounded-none px-3 sm:px-4 lg:px-6 py-1.5 sm:py-2 font-normal text-sm sm:text-base lg:text-lg whitespace-nowrap border border-primary hover:border-secondary group-hover/nav:border-secondary hover:bg-gradient-to-r hover:from-primary hover:to-primary/80 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20"
+                  className="relative z-10 bg-secondary group-hover/nav:bg-primary text-primary group-hover/nav:text-primary rounded-none px-3 sm:px-4 lg:px-6 py-1.5 sm:py-2 font-normal text-sm sm:text-base lg:text-lg whitespace-nowrap border border-primary hover:border-secondary group-hover/nav:border-secondary hover:bg-gradient-to-r hover:from-primary hover:to-primary/80 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20"
                 >
                   Get Started
                 </button>
@@ -362,7 +362,7 @@ export default function Navbar() {
                 {navLinks[isDropdownOpen].dropdown.some(item => item.image) ? (
                   <div className="w-full">
                     <div className="mb-3 sm:mb-4">
-                      <h3 className="text-xl sm:text-2xl font-bold text-secondary mb-2">
+                      <h3 className="text-xl sm:text-2xl font-bold text-primary mb-2">
                         {navLinks[isDropdownOpen].label}
                       </h3>
                       <div className="w-10 sm:w-12 h-0.5 bg-secondary rounded-full mx-auto md:mx-0"></div>
@@ -390,7 +390,7 @@ export default function Navbar() {
                               )}
                             </div>
                             <div className="mt-2 text-center">
-                              <h4 className="text-sm sm:text-base font-semibold text-secondary">
+                              <h4 className="text-sm sm:text-base font-semibold text-primary">
                                 {dropdownItem.label}
                               </h4>
                             </div>
@@ -424,7 +424,7 @@ export default function Navbar() {
                 ) : navLinks[isDropdownOpen].dropdown.some(item => item.icon) ? (
                   <div className="w-full">
                     <div className="mb-3 sm:mb-4">
-                      <h3 className="text-xl sm:text-2xl font-bold text-secondary mb-2">
+                      <h3 className="text-xl sm:text-2xl font-bold text-primary mb-2">
                         {navLinks[isDropdownOpen].label}
                       </h3>
                       <div className="w-10 sm:w-12 h-0.5 bg-secondary rounded-full mx-auto md:mx-0"></div>
@@ -440,14 +440,14 @@ export default function Navbar() {
                         const card = (
                           <div className={`flex-1 px-4 py-4 ${idx !== 0 ? "md:border-l md:border-secondary/20" : ""}`}>
                             <div className="flex flex-col items-start">
-                              <span className="text-5xl text-secondary mb-3">
+                              <span className="text-5xl text-primary mb-3">
                                 {IconComp && <IconComp />}
                               </span>
-                              <h4 className="text-lg font-semibold text-secondary mb-2">
+                              <h4 className="text-lg font-semibold text-primary mb-2">
                                 {dropdownItem.label}
                               </h4>
                               {dropdownItem.description && (
-                                <p className="text-sm text-secondary/80">
+                                <p className="text-sm text-primary/80">
                                   {dropdownItem.description}
                                 </p>
                               )}
@@ -498,7 +498,7 @@ export default function Navbar() {
                     </div>
                     <div className="flex flex-col justify-center h-full order-1 md:order-2 md:col-span-1 lg:col-span-2 text-center md:text-left">
                       <div className="mb-3 sm:mb-4">
-                        <h3 className="text-xl sm:text-2xl font-bold text-secondary mb-2">
+                        <h3 className="text-xl sm:text-2xl font-bold text-primary mb-2">
                           {navLinks[isDropdownOpen].label}
                         </h3>
                         <div className="w-10 sm:w-12 h-0.5 bg-secondary rounded-full mx-auto md:mx-0"></div>
@@ -516,7 +516,7 @@ export default function Navbar() {
                                 className="group"
                               >
                                 <div className={`px-3 sm:px-4 py-1.5 sm:py-2 group hover:bg-secondary/10 hover:scale-105 transition-all duration-200 rounded-md`}>
-                                  <h2 className={`relative text-base sm:text-lg font-sans transition-colors duration-200 text-secondary`}>
+                                  <h2 className={`relative text-base sm:text-lg font-sans transition-colors duration-200 text-primary`}>
                                     {dropdownItem.label}
                                     <span className="absolute bottom-[-2px] left-1/2 w-0 h-[2px] bg-secondary group-hover:w-full transition-all duration-300 ease-in-out transform -translate-x-1/2"></span>
                                   </h2>
@@ -535,7 +535,7 @@ export default function Navbar() {
                                   ? "bg-secondary/20 border border-secondary/30" 
                                   : ""
                               }`}>
-                                <h2 className={`relative text-base sm:text-lg font-sans transition-colors duration-200 text-secondary ${
+                                <h2 className={`relative text-base sm:text-lg font-sans transition-colors duration-200 text-primary ${
                                   pathname === dropdownItem.href 
                                     ? "font-semibold" 
                                     : ""

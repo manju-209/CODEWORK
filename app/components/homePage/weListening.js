@@ -57,10 +57,10 @@ const WeListening = () => {
   };
 
   return (
-    <div className="min-h-screen bg-primary text-secondary px-7 pt-24 pb-16">
+    <div className="min-h-screen bg-primary text-primary px-7 pt-24 pb-16">
       <div className="max-w-6xl mx-auto">
         <div className="mb-6">
-          <Link href="/contact-ai-solutions" className="inline-block px-4 py-2 border border-secondary rounded-none text-secondary hover:bg-secondary hover:text-primary transition">
+          <Link href="/contact-ai-solutions" className="inline-block px-4 py-2 border border-secondary rounded-none text-primary hover:bg-secondary hover:text-primary transition">
             Back
           </Link>
         </div>
@@ -113,7 +113,7 @@ const WeListening = () => {
             />
           </div>
 
-          <button type="submit" disabled={loading} className="px-10 py-4 border border-secondary rounded-none text-secondary font-semibold w-fit hover:bg-secondary hover:text-primary transition">
+          <button type="submit" disabled={loading} className="px-10 py-4 border border-secondary rounded-none text-primary font-semibold w-fit hover:bg-secondary hover:text-primary transition">
             {loading ? 'Submitting…' : 'Submit'}
           </button>
 

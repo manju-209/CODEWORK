@@ -101,7 +101,7 @@ const ChatBotAi = () => {
     <section className="w-full bg-secondary py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="mx-auto max-w-4xl bg-secondary border border-primary/20 rounded-md shadow-lg px-4 sm:px-6 py-3 sm:py-4 flex items-center gap-3">
-          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary text-secondary text-sm">
+          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary text-sm">
             ✦
           </span>
           <input
@@ -115,7 +115,7 @@ const ChatBotAi = () => {
           <button
             type="button"
             onClick={() => handleSubmit()}
-            className="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-md bg-primary text-secondary text-sm font-medium hover:bg-primary/90 transition-colors"
+            className="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-md bg-primary text-primary text-sm font-medium hover:bg-primary/90 transition-colors"
           >
             Ask
           </button>

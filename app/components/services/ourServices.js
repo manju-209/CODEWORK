@@ -207,7 +207,7 @@ const OurServices = () => {
                         <button className="relative bg-secondary text-primary font-medium text-[15px] px-3 py-[0.2em] pl-4 h-[2.2em] rounded-[0.8em] flex items-center overflow-hidden cursor-pointer shadow-[inset_0_0_1.6em_-0.6em_rgba(255,255,255,0.3)] group">
                           <span className="mr-8">Read More</span>
                           <div className="absolute right-[0.25em] bg-primary h-[1.7em] w-[1.7em] rounded-[0.6em] flex items-center justify-center transition-all duration-300 group-hover:w-[calc(100%-0.5em)] shadow-[0.1em_0.1em_0.5em_0.15em_rgba(255,255,255,0.25)] active:scale-95">
-                            <FaArrowRight className="w-[0.8em] transition-transform duration-300 text-secondary group-hover:translate-x-[0.1em]" />
+                            <FaArrowRight className="w-[0.8em] transition-transform duration-300 text-primary group-hover:translate-x-[0.1em]" />
                           </div>
                         </button>
                       </Link>

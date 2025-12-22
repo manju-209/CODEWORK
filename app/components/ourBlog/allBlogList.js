@@ -338,7 +338,7 @@ const AllBlogList = () => {
   const [showAll, setShowAll] = useState(false);
   const displayedPosts = showAll ? blogPosts : blogPosts.slice(0, 9);
   return (
-    <div className="w-full px-4 py-16 bg-primary text-secondary relative overflow-hidden">
+    <div className="w-full px-4 py-16 bg-primary text-primary relative overflow-hidden">
       {/* Static Background Decorative Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-40 h-40 bg-secondary/20 rounded-full"></div>
@@ -349,9 +349,9 @@ const AllBlogList = () => {
 
       {/* Header */}
       <div className="text-center mb-16 relative z-10">        
-        <h1 className="text-4xl font-bold mb-6 text-secondary">
-          <span className="text-secondary">Our </span>
-          <span className="text-secondary">
+        <h1 className="text-4xl font-bold mb-6 text-primary">
+          <span className="text-primary">Our </span>
+          <span className="text-primary">
             Blog Posts
           </span>
         </h1>
@@ -380,24 +380,24 @@ const AllBlogList = () => {
               {/* Content Section */}
               <div className="p-6 flex flex-col flex-grow">
                 {/* Date and Read Time */}
-                <div className="flex items-center justify-between mb-3 text-secondary/70 text-sm">
+                <div className="flex items-center justify-between mb-3 text-primary/70 text-sm">
                   <div className="flex items-center">
-                    <FiClock className="mr-2 text-secondary" />
+                    <FiClock className="mr-2 text-primary" />
                     <span>{new Date(post.date).toLocaleDateString()}</span>
                   </div>
                   <div className="flex items-center">
-                    <FiUser className="mr-1 text-secondary" />
+                    <FiUser className="mr-1 text-primary" />
                     <span>{post.readTime}</span>
                   </div>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-secondary mb-3 leading-tight line-clamp-2">
+                <h3 className="text-xl font-bold text-primary mb-3 leading-tight line-clamp-2">
                   {post.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-secondary/80 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
+                <p className="text-primary/80 text-sm leading-relaxed mb-6 flex-grow line-clamp-3">
                   {post.description}
                 </p>
 
@@ -405,7 +405,7 @@ const AllBlogList = () => {
                 <div className="mt-auto">
                   <a
                     href={post.link}
-                    className="inline-flex items-center text-secondary hover:text-secondary text-sm font-semibold border-2 border-secondary hover:border-secondary/60 hover:bg-secondary/10 px-4 py-2  transition-all duration-300 backdrop-blur-sm w-full justify-center ring-1 ring-secondary ring-offset-2 ring-offset-primary"
+                    className="inline-flex items-center text-primary hover:text-primary text-sm font-semibold border-2 border-secondary hover:border-secondary/60 hover:bg-secondary/10 px-4 py-2  transition-all duration-300 backdrop-blur-sm w-full justify-center ring-1 ring-secondary ring-offset-2 ring-offset-primary"
                   >
                     <span>Continue Reading</span>
                     <FiArrowRight className="ml-2 w-4 h-4" />
@@ -421,7 +421,7 @@ const AllBlogList = () => {
         <div className="mt-12 flex justify-center relative z-10">
           <button
             onClick={() => setShowAll(true)}
-            className="inline-flex items-center text-secondary text-sm font-semibold border-2 border-secondary hover:bg-secondary/10 px-8 py-3 transition-all duration-300 rounded-none"
+            className="inline-flex items-center text-primary text-sm font-semibold border-2 border-secondary hover:bg-secondary/10 px-8 py-3 transition-all duration-300 rounded-none"
           >
             View All Blogs
           </button>

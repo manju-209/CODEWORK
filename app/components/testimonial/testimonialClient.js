@@ -3,13 +3,13 @@ import React from "react";
 
 const TestimonialClient = () => {
   return (
-    <div className="bg-primary text-secondary relative overflow-hidden px-6 md:py-20  space-y-20">
+    <div className="bg-primary text-primary relative overflow-hidden px-6 md:py-20  space-y-20">
 
       {/* Section Header */}
       <div className="text-center mb-20 relative z-10">        
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-secondary">
-          <span className="text-secondary">What Our </span>
-          <span className="text-secondary">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
+          <span className="text-primary">What Our </span>
+          <span className="text-primary">
             Clients Say
           </span>
         </h2>
@@ -52,10 +52,10 @@ const TestimonialClient = () => {
         </div>
 
         {/* Right Testimonial Box */}
-        <div className="bg-secondary/30 backdrop-blur-xl border border-white/10 text-secondary p-8 rounded-3xl shadow-2xl max-w-2xl hover:bg-secondary/40 hover:border-white/30 transition-all duration-500 relative">
+        <div className="bg-secondary/30 backdrop-blur-xl border border-white/10 text-primary p-8 rounded-3xl shadow-2xl max-w-2xl hover:bg-secondary/40 hover:border-white/30 transition-all duration-500 relative">
   
 
-          <p className="text-lg leading-relaxed text-secondary/90 mb-6 italic">
+          <p className="text-lg leading-relaxed text-primary/90 mb-6 italic">
             "The Codework team demonstrated exceptional expertise by collaborating
             in developing our ticket booking application project. Their attention
             to detail, seamless integration of features, and commitment to meeting
@@ -68,8 +68,8 @@ const TestimonialClient = () => {
               J
             </div>
             <div>
-              <p className="font-bold text-secondary text-lg">Johnson R</p>
-              <p className="text-secondary/80 text-sm">
+              <p className="font-bold text-primary text-lg">Johnson R</p>
+              <p className="text-primary/80 text-sm">
                 Delivery Manager – WebSignX Technologies
               </p>
             </div>
@@ -83,9 +83,9 @@ const TestimonialClient = () => {
       {/* Second Testimonial (Right Image) */}
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-16 max-w-7xl mx-auto relative z-10">
         {/* Left Testimonial Box */}
-        <div className="bg-secondary/30 backdrop-blur-xl border border-white/10 text-secondary p-8 rounded-3xl shadow-2xl max-w-2xl hover:bg-secondary/40 hover:border-white/30 transition-all duration-500 relative">
+        <div className="bg-secondary/30 backdrop-blur-xl border border-white/10 text-primary p-8 rounded-3xl shadow-2xl max-w-2xl hover:bg-secondary/40 hover:border-white/30 transition-all duration-500 relative">
 
-          <p className="text-lg leading-relaxed text-secondary/90 mb-6 italic">
+          <p className="text-lg leading-relaxed text-primary/90 mb-6 italic">
             "It's rare to find partners who go above and beyond their scope of work.
             Your proactive thinking and self-initiative in providing insightful ideas
             have truly elevated our product to new heights. The innovative
@@ -99,8 +99,8 @@ const TestimonialClient = () => {
               B
             </div>
             <div>
-              <p className="font-bold text-secondary text-lg">Bikram Bakshi</p>
-              <p className="text-secondary/80 text-sm">Entrepreneur & Tech Innovator</p>
+              <p className="font-bold text-primary text-lg">Bikram Bakshi</p>
+              <p className="text-primary/80 text-sm">Entrepreneur & Tech Innovator</p>
             </div>
           </div>
 
@@ -147,7 +147,7 @@ const TestimonialClient = () => {
           
           {/* Floating Tech Icons */}
           <div className="absolute top-4 -right-8 w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center animate-float group-hover:animate-bounce">
-            <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
             </svg>
           </div>
@@ -190,7 +190,7 @@ const TestimonialClient = () => {
                 <div className="w-2 h-2 bg-secondary/60 rounded-full"></div>
                 <div className="w-2 h-2 bg-secondary/30 rounded-full"></div>
               </div>
-              <div className="text-xs text-secondary font-medium">Trusted Partner</div>
+              <div className="text-xs text-primary font-medium">Trusted Partner</div>
             </div>
           </div>
           
@@ -200,9 +200,9 @@ const TestimonialClient = () => {
         </div>
 
         {/* Right Testimonial Box */}
-        <div className="bg-secondary/30 backdrop-blur-xl border border-white/10 text-secondary p-8 rounded-3xl shadow-2xl max-w-2xl hover:bg-secondary/40 hover:border-white/30 transition-all duration-500 relative">
+        <div className="bg-secondary/30 backdrop-blur-xl border border-white/10 text-primary p-8 rounded-3xl shadow-2xl max-w-2xl hover:bg-secondary/40 hover:border-white/30 transition-all duration-500 relative">
 
-          <p className="text-lg leading-relaxed text-secondary/90 mb-6 italic">
+          <p className="text-lg leading-relaxed text-primary/90 mb-6 italic">
             "We are extremely pleased with the Codework team's exceptional work in developing our website. Their technical expertise, attention to detail, and seamless execution exceeded our expectations. From design to functionality, they ensured that every aspect was well-integrated and user-friendly. Their commitment to meeting deadlines and delivering high-quality results made this project a great success. We look forward to collaborating with them again on future projects."
           </p>
 
@@ -211,8 +211,8 @@ const TestimonialClient = () => {
               J
             </div>
             <div>
-              <p className="font-bold text-secondary text-lg">Johnson R</p>
-              <p className="text-secondary/80 text-sm">
+              <p className="font-bold text-primary text-lg">Johnson R</p>
+              <p className="text-primary/80 text-sm">
                 Entrepreneur & Tech Innovator
               </p>
             </div>
@@ -228,7 +228,7 @@ const TestimonialClient = () => {
         {/* Left Testimonial Box */}
         <div className="bg-secondary/30 backdrop-blur-xl border border-white/10 text-white p-8 rounded-3xl shadow-2xl max-w-2xl hover:bg-secondary/40 hover:border-primary/30 transition-all duration-500 relative">
 
-          <p className="text-lg leading-relaxed text-secondary/90 mb-6 italic">
+          <p className="text-lg leading-relaxed text-primary/90 mb-6 italic">
             "Partnering with CODEWORK has completely transformed the way we run our e-commerce dropshipping business. Their AI-powered automation solutions simplified our market research process and gave us valuable insights that used to take days to gather. The seamless sales platform integration they built has not only saved us time but also helped us scale with efficiency. With CODEWORK’s expertise, we feel truly empowered to focus on growth while technology takes care of the complexities. A real game-changer for Lovio!"
           </p>
 
@@ -237,8 +237,8 @@ const TestimonialClient = () => {
               L
             </div>
             <div>
-              <p className="font-bold text-secondary text-lg">Lovio Team</p>
-              <p className="text-secondary/80 text-sm">Entrepreneur & Tech Innovator</p>
+              <p className="font-bold text-primary text-lg">Lovio Team</p>
+              <p className="text-primary/80 text-sm">Entrepreneur & Tech Innovator</p>
             </div>
           </div>
 
