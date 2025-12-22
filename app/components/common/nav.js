@@ -268,7 +268,7 @@ export default function Navbar() {
                   className="relative group"
                 >
                   <button
-                    className={`nav-link relative ${
+                    className={`nav-link  relative ${
                       isWhiteMode ? "text-primary" : (isHighlight ? "text-primary" : "text-primary")
                     } text-xs sm:text-sm lg:text-sm font-sans ease-in-out duration-500 flex items-center gap-1 whitespace-nowrap px-3 py-2 rounded-lg transition-all hover:bg-white/5 hover:backdrop-blur-sm ${
                       isPageActive(item) ? "active-page" : ""
