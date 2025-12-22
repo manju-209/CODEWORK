@@ -20,7 +20,7 @@ function TextAnalytic() {
       <div className="container mx-auto px-8 lg:px-16 py-12 relative z-10">
         {/* ==== Headline & Introduction ==== */}
         <div className="mb-12">
-          <div className="inline-flex items-center border border-secondary/30 bg-white/5 text-secondary px-6 py-3 rounded-full text-sm font-medium mb-6">
+          <div className="inline-flex items-center border border-secondary/30 bg-white/5 text-primary px-6 py-3 rounded-full text-sm font-medium mb-6">
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
             Text Analytics
           </div>
@@ -40,13 +40,13 @@ function TextAnalytic() {
           </h3>
           <ul className="space-y-4 text-primary/90 pl-4 border-l-4 border-secondary/40 mb-2">
             <li>
-              <span className="font-semibold text-secondary">Misunderstood messages:</span> Where the true meaning of a conversation gets lost.
+              <span className="font-semibold text-primary">Misunderstood messages:</span> Where the true meaning of a conversation gets lost.
             </li>
             <li>
-              <span className="font-semibold text-secondary">Emotional cues often missed:</span> Making it hard to respond with care and understanding.
+              <span className="font-semibold text-primary">Emotional cues often missed:</span> Making it hard to respond with care and understanding.
             </li>
             <li>
-              <span className="font-semibold text-secondary">No clear indicators for improvement:</span> Teams struggle to identify and fix gaps, leading to inconsistent care.
+              <span className="font-semibold text-primary">No clear indicators for improvement:</span> Teams struggle to identify and fix gaps, leading to inconsistent care.
             </li>
           </ul>
           <p className="text-primary/90 mt-2">These issues can reduce trust and lower the quality of care.</p>
@@ -64,7 +64,7 @@ function TextAnalytic() {
             <li>Uncovered emotional patterns using sentiment analysis.</li>
           </ul>
           <p className="text-primary/90 mt-2">
-            This change brought us closer to understanding both the <span className="font-semibold text-secondary">“what”</span> and the <span className="font-semibold text-secondary">“how”</span> behind every conversation.
+            This change brought us closer to understanding both the <span className="font-semibold text-primary">“what”</span> and the <span className="font-semibold text-primary">“how”</span> behind every conversation.
           </p>
         </div>
 
@@ -97,11 +97,11 @@ function TextAnalytic() {
               How Our In-House Solution Makes a Difference
             </h3>
             <ul className="space-y-4 text-primary/90">
-              <li><span className="font-semibold text-secondary">Live Transcription:</span> No detail goes unnoticed.</li>
-              <li><span className="font-semibold text-secondary">Deeper Insight:</span> AI reads between the lines.</li>
-              <li><span className="font-semibold text-secondary">Emotion Tracker:</span> Picks up on frustration, satisfaction, or confusion.</li>
-              <li><span className="font-semibold text-secondary">Trend Spotting:</span> Helps us identify areas that require improvement.</li>
-              <li><span className="font-semibold text-secondary">Simple Dashboards:</span> Complex data made visual and usable.</li>
+              <li><span className="font-semibold text-primary">Live Transcription:</span> No detail goes unnoticed.</li>
+              <li><span className="font-semibold text-primary">Deeper Insight:</span> AI reads between the lines.</li>
+              <li><span className="font-semibold text-primary">Emotion Tracker:</span> Picks up on frustration, satisfaction, or confusion.</li>
+              <li><span className="font-semibold text-primary">Trend Spotting:</span> Helps us identify areas that require improvement.</li>
+              <li><span className="font-semibold text-primary">Simple Dashboards:</span> Complex data made visual and usable.</li>
             </ul>
           </div>
           {/* Tech & Build */}
@@ -110,10 +110,10 @@ function TextAnalytic() {
               What Powers Our Platform
             </h3>
             <ul className="mb-4 space-y-3 text-primary/90 list-disc list-inside">
-              <li><span className="font-semibold text-secondary">Voice-to-Text Tools:</span> Google Cloud, Whisper AI</li>
-              <li><span className="font-semibold text-secondary">AI Language Processing:</span> spaCy, NLTK, BERT</li>
+              <li><span className="font-semibold text-primary">Voice-to-Text Tools:</span> Google Cloud, Whisper AI</li>
+              <li><span className="font-semibold text-primary">AI Language Processing:</span> spaCy, NLTK, BERT</li>
             </ul>
-            <h4 className="mt-6 mb-2 text-xl font-bold text-secondary">Faster Innovation with an In-House Build</h4>
+            <h4 className="mt-6 mb-2 text-xl font-bold text-primary">Faster Innovation with an In-House Build</h4>
             <ul className="mb-4 space-y-3 text-primary/90 list-disc list-inside">
               <li>Quick fixes and updates</li>
               <li>Custom fit for our needs</li>

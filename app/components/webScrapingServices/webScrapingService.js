@@ -23,7 +23,7 @@ function WebScrapingService() {
 
         {/* ==== INTRODUCTION ==== */}
         <div className="mb-12">
-          <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm px-6 py-3 rounded-full text-sm text-secondary font-medium mb-6">
+          <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm px-6 py-3 rounded-full text-sm text-primary font-medium mb-6">
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
             Web data extraction
           </div>
@@ -58,7 +58,7 @@ function WebScrapingService() {
             To overcome these challenges, we adopted custom web data extraction tools that automate the entire process. Instead of wasting hours, we now get accurate 
             data in minutes — in formats like Excel or CSV — ready for use in decision-making.
           </p>
-          <h4 className="text-xl font-bold text-secondary mb-2">How It Works:</h4>
+          <h4 className="text-xl font-bold text-primary mb-2">How It Works:</h4>
           <ul className="space-y-2 text-primary/90 pl-4 border-l-4 border-secondary/40">
             <li>Define what data you need (e.g., product prices, leads, reviews)</li>
             <li>Build a scraper to pull that data from specific websites</li>
@@ -103,11 +103,11 @@ function WebScrapingService() {
           <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-8 border border-primary/20 shadow-2xl hover:bg-secondary/40 transition">
             <h3 className="text-3xl font-bold text-primary mb-6">Technology Stack Used</h3>
             <ul className="space-y-3 text-primary/90">
-              <li><span className="text-secondary font-medium">Python</span> – for building scraping scripts</li>
-              <li><span className="text-secondary font-medium">BeautifulSoup & Scrapy</span> – to extract and clean data</li>
-              <li><span className="text-secondary font-medium">Pandas</span> – for data formatting</li>
-              <li><span className="text-secondary font-medium">Google Sheets & Excel</span> – for reporting</li>
-              <li><span className="text-secondary font-medium">Scheduler</span> (Cron Jobs or Airflow) – to automate scraping timelines</li>
+              <li><span className="text-primary font-medium">Python</span> – for building scraping scripts</li>
+              <li><span className="text-primary font-medium">BeautifulSoup & Scrapy</span> – to extract and clean data</li>
+              <li><span className="text-primary font-medium">Pandas</span> – for data formatting</li>
+              <li><span className="text-primary font-medium">Google Sheets & Excel</span> – for reporting</li>
+              <li><span className="text-primary font-medium">Scheduler</span> (Cron Jobs or Airflow) – to automate scraping timelines</li>
             </ul>
           </div>
         </div>

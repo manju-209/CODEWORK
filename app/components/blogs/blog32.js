@@ -358,7 +358,7 @@ const Blog32 = () => {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-secondary mb-3">Visual Inspection</h3>
+                <h3 className="text-xl font-semibold text-primary mb-3">Visual Inspection</h3>
                 <p className="text-white/80 leading-relaxed">
                   Computer vision inspects items for defects, spots corrosion, or finds faulty parts in manufacturing and infrastructure. It helps detect issues with much greater precision and speed through segmentation and detection.
                 </p>
@@ -373,42 +373,42 @@ const Blog32 = () => {
 
             <div className="space-y-6 mb-6">
               <div>
-                <h3 className="text-xl font-semibold text-secondary mb-3">Agriculture</h3>
+                <h3 className="text-xl font-semibold text-primary mb-3">Agriculture</h3>
                 <p className="text-white/80 leading-relaxed">
                   Drones and cameras capture images of crops. Vision models analyze plant health, spot pests, and guide targeted treatments.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-secondary mb-3">Autonomous Vehicles</h3>
+                <h3 className="text-xl font-semibold text-primary mb-3">Autonomous Vehicles</h3>
                 <p className="text-white/80 leading-relaxed">
                   Self-driving cars combine cameras with lidar, radar, and sensors. The entire vision tasks of detection, segmentation, and scene understanding assist the car to navigate safely.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-secondary mb-3">Healthcare</h3>
+                <h3 className="text-xl font-semibold text-primary mb-3">Healthcare</h3>
                 <p className="text-white/80 leading-relaxed">
                   Imaging for medical diagnosis employs mainly detection and segmentation to identify the markers of diseases from X-rays, CT scans, and MRIs. These tools support diagnosis and treatment planning.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-secondary mb-3">Manufacturing</h3>
+                <h3 className="text-xl font-semibold text-primary mb-3">Manufacturing</h3>
                 <p className="text-white/80 leading-relaxed">
                   Automatic vision systems track inventory, scan items, and check product quality faster and more consistently than manual inspection.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-secondary mb-3">Retail and E-commerce</h3>
+                <h3 className="text-xl font-semibold text-primary mb-3">Retail and E-commerce</h3>
                 <p className="text-white/80 leading-relaxed">
                   Systems like Amazon's Just Walk Out rely on vision for tracking of items taken by customers, while augmented reality and pose estimation enable virtual try-ons for clothes and eyewear.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-secondary mb-3">Robotics</h3>
+                <h3 className="text-xl font-semibold text-primary mb-3">Robotics</h3>
                 <p className="text-white/80 leading-relaxed">
                   Robots use vision in navigation, picking and placing of objects, and safely interacting with people and the environment.
                 </p>
@@ -423,35 +423,35 @@ const Blog32 = () => {
 
             <div className="space-y-4 mb-6">
               <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
-                <h3 className="text-lg font-semibold text-secondary mb-2">Keras</h3>
+                <h3 className="text-lg font-semibold text-primary mb-2">Keras</h3>
                 <p className="text-white/80 leading-relaxed">
                   Keras is a simple deep learning API that runs on top of frameworks like TensorFlow or PyTorch. It includes a variety of tutorials and examples dealing with images.
                 </p>
               </div>
 
               <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
-                <h3 className="text-lg font-semibold text-secondary mb-2">OpenCV</h3>
+                <h3 className="text-lg font-semibold text-primary mb-2">OpenCV</h3>
                 <p className="text-white/80 leading-relaxed">
                   OpenCV is a general library of open-source image processing, comprising a great number of filtering, detection, and video analysis algorithms. It contains Python, Java, and C++ bindings.
                 </p>
               </div>
 
               <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
-                <h3 className="text-lg font-semibold text-secondary mb-2">Scikit-image</h3>
+                <h3 className="text-lg font-semibold text-primary mb-2">Scikit-image</h3>
                 <p className="text-white/80 leading-relaxed">
                   Scikit-image is a Python package with easy-to-use image processing functions useful for preprocessing and simple feature extraction.
                 </p>
               </div>
 
               <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
-                <h3 className="text-lg font-semibold text-secondary mb-2">TensorFlow</h3>
+                <h3 className="text-lg font-semibold text-primary mb-2">TensorFlow</h3>
                 <p className="text-white/80 leading-relaxed">
                   TensorFlow is a general deep learning platform from Google. It contains tools and datasets that can be used for image classification, segmentation, and detection.
                 </p>
               </div>
 
               <div className="bg-primary/40 rounded-lg p-4 border border-secondary/20">
-                <h3 className="text-lg font-semibold text-secondary mb-2">Torchvision</h3>
+                <h3 className="text-lg font-semibold text-primary mb-2">Torchvision</h3>
                 <p className="text-white/80 leading-relaxed">
                   Torchvision is a part of PyTorch and includes common image transforms, datasets, and prebuilt models for vision tasks.
                 </p>

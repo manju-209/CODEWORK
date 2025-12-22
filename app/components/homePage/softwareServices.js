@@ -91,10 +91,10 @@ const SoftwareServices = () => {
               href={activeServiceData.buttonLink} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="group inline-flex items-center gap-3 text-lg font-semibold hover:gap-5 transition-all duration-300 border border-primary px-5 py-3 rounded-none hover:bg-primary hover:text-secondary"
+              className="group inline-flex items-center gap-3 text-lg font-semibold hover:gap-5 transition-all duration-300 border border-primary px-5 py-3 rounded-none hover:bg-primary hover:text-primary"
             >
               {activeServiceData.buttonText}
-              <IoArrowForward className="w-6 h-6 text-primary group-hover:text-secondary group-hover:translate-x-1 transition-transform duration-300" />
+              <IoArrowForward className="w-6 h-6 text-primary group-hover:text-primary group-hover:translate-x-1 transition-transform duration-300" />
             </a>
           </div>
         </div>

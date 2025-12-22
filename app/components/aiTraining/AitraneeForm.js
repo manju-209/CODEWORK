@@ -153,7 +153,7 @@ const AitraneeForm = () => {
                     <div className="flex-1 text-center lg:pl-14 lg:text-left">
                         {/* Section Badge */}
                         <div className="inline-flex items-center px-4 py-2 md:px-6 md:py-3 rounded-full border border-secondary/30 bg-white/5 backdrop-blur-sm mb-6 md:mb-8">
-                            <span className="text-secondary text-sm font-medium">— AI Trainee Application —</span>
+                            <span className="text-primary text-sm font-medium">— AI Trainee Application —</span>
                         </div>
 
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-white mb-6 md:mb-8 leading-tight">
@@ -167,7 +167,7 @@ const AitraneeForm = () => {
                             <div className="absolute -left-3 md:-left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary to-transparent rounded-full hidden lg:block"></div>
                             
                             <p className="text-lg sm:text-lg md:text-lg text-white/90 leading-relaxed lg:pl-8 font-light">
-                                We are committed to empowering the next generation of innovators through hands-on experience in <span className="text-secondary font-medium">AI, ML, and Data Science</span>. Join our internship program to gain real-world skills, work on impactful projects, and build a strong foundation for your future career in technology.
+                                We are committed to empowering the next generation of innovators through hands-on experience in <span className="text-primary font-medium">AI, ML, and Data Science</span>. Join our internship program to gain real-world skills, work on impactful projects, and build a strong foundation for your future career in technology.
                             </p>
                             
                             <p className="text-base sm:text-lg md:text-lg text-white/80 leading-relaxed lg:pl-8 font-light">
@@ -175,7 +175,7 @@ const AitraneeForm = () => {
                             </p>
                             
                             <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed lg:pl-8 font-light">
-                                Let's make this an <span className="text-secondary font-medium">unforgettable journey</span> together. Apply now and kickstart your career!
+                                Let's make this an <span className="text-primary font-medium">unforgettable journey</span> together. Apply now and kickstart your career!
                             </p>
                         </div>
                     </div>
@@ -297,7 +297,7 @@ const AitraneeForm = () => {
                                         {!fileName ? (
                                             <div className="flex flex-col items-center justify-center space-y-1.5 text-center">
                                                 <div className="w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                                                    <FiUploadCloud className="w-4 h-4 text-secondary" />
+                                                    <FiUploadCloud className="w-4 h-4 text-primary" />
                                                 </div>
                                                 <div>
                                                     <p className="text-white font-medium text-xs mb-1">Drag & drop resume</p>
@@ -306,7 +306,7 @@ const AitraneeForm = () => {
                                                 <button
                                                     type="button"
                                                     onClick={onButtonClick}
-                                                    className="px-3 py-1 bg-secondary/20 text-secondary rounded-sm hover:bg-secondary/30 transition-all duration-300 text-xs font-medium border border-secondary/30 hover:border-secondary/50"
+                                                    className="px-3 py-1 bg-secondary/20 text-primary rounded-sm hover:bg-secondary/30 transition-all duration-300 text-xs font-medium border border-secondary/30 hover:border-secondary/50"
                                                 >
                                                     Browse
                                                 </button>
@@ -316,11 +316,11 @@ const AitraneeForm = () => {
                                             <div className="flex items-center justify-between bg-white/10 backdrop-blur-sm p-2 rounded-md border border-white/20">
                                                 <div className="flex items-center space-x-2">
                                                     <div className="w-5 h-5 bg-secondary/20 rounded-md flex items-center justify-center">
-                                                        <FiFile className="text-secondary w-3 h-3" />
+                                                        <FiFile className="text-primary w-3 h-3" />
                                                     </div>
                                                     <div>
                                                         <p className="text-white font-medium text-xs truncate max-w-[120px]">{fileName}</p>
-                                                        <p className="text-secondary text-xs flex items-center">
+                                                        <p className="text-primary text-xs flex items-center">
                                                             <FiCheckCircle className="mr-1 w-3 h-3" /> Ready
                                                         </p>
                                                     </div>

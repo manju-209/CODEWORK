@@ -54,7 +54,7 @@ const WeekResult = () => {
           {/* Right Side - Image and Description (shows active phase) */}
           <div className="relative">
             {activePhase ? (
-              <div className="bg-primary text-secondary  overflow-hidden shadow-2xl transition-all duration-500">
+              <div className="bg-primary text-primary  overflow-hidden shadow-2xl transition-all duration-500">
                 <img 
                   key={activePhase}
                   src={phases.find(p => p.id === activePhase)?.image} 
@@ -68,7 +68,7 @@ const WeekResult = () => {
                 </div>
               </div>
             ) : (
-              <div className="bg-primary text-secondary  overflow-hidden shadow-2xl">
+              <div className="bg-primary text-primary  overflow-hidden shadow-2xl">
                 <img 
                   src="https://codework-ebook.s3.amazonaws.com/codework-media/timeline/images1.jpg" 
                   alt="Default"

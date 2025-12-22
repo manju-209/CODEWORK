@@ -296,7 +296,7 @@ const Blog9 = () => {
             <p className="text-white/80 leading-relaxed mb-6">
               Are you ready to build a responsible AI culture in your organization?
               <br/><br/>
-              Contact the <a href="https://codework.ai/contact-ai-solutions" className="text-secondary hover:underline font-semibold">Codework.ai</a> team to learn how we can help you integrate safe, ethical, and innovative AI solutions into your business.
+              Contact the <a href="https://codework.ai/contact-ai-solutions" className="text-primary hover:underline font-semibold">Codework.ai</a> team to learn how we can help you integrate safe, ethical, and innovative AI solutions into your business.
             </p>
           </section> */}
         </div>

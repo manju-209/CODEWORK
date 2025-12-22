@@ -30,7 +30,7 @@ const TextAnalyticsLanding = () => {
           
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-white/5 backdrop-blur-sm mb-6">
-            <span className="text-secondary text-sm font-medium">— NLP & Sentiment Analysis —</span>
+            <span className="text-primary text-sm font-medium">— NLP & Sentiment Analysis —</span>
           </div>
 
           {/* Enhanced Heading with Gradient Text */}
@@ -48,7 +48,7 @@ const TextAnalyticsLanding = () => {
           <div className="relative">
             <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary to-transparent rounded-full"></div>
           <p className="text-base md:text-lg w-[90%] leading-relaxed text-primary/90 pl-6 font-light">
-            Communication is vital in caregiving, but often challenging. The <span className="text-secondary font-medium">Text Analytics Project</span> uses technologies like <span className="text-secondary font-medium">NLP</span> and <span className="text-secondary font-medium">sentiment analysis</span> to turn conversations into insights, enhancing engagement and service quality.
+            Communication is vital in caregiving, but often challenging. The <span className="text-primary font-medium">Text Analytics Project</span> uses technologies like <span className="text-primary font-medium">NLP</span> and <span className="text-primary font-medium">sentiment analysis</span> to turn conversations into insights, enhancing engagement and service quality.
           </p>
           </div>
 
@@ -74,13 +74,13 @@ const TextAnalyticsLanding = () => {
             
             {/* Floating tech elements */}
             <div className="absolute top-4 right-4 w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-float">
-              <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z"/>
               </svg>
             </div>
             
             <div className="absolute bottom-4 left-4 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-pulse">
-              <svg className="w-3 h-3 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
               </svg>
             </div>

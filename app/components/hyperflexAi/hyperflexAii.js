@@ -63,7 +63,7 @@ function Hyperflexai() {
                 Why We Built Hyperflx
               </h2>
               <p className="text-lg leading-relaxed text-justify">
-                At <span className="text-secondary font-medium">Codework</span>, we saw a gap in how students and researchers access reliable academic content. We built <span className="text-secondary font-medium">Hyperflx</span>, an AI-powered search engine made specifically for education and research. It delivers trusted, easy-to-understand, and well-organized results to make learning smoother and faster.
+                At <span className="text-primary font-medium">Codework</span>, we saw a gap in how students and researchers access reliable academic content. We built <span className="text-primary font-medium">Hyperflx</span>, an AI-powered search engine made specifically for education and research. It delivers trusted, easy-to-understand, and well-organized results to make learning smoother and faster.
               </p>
               
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/50 to-transparent"></div>
@@ -82,11 +82,11 @@ function Hyperflexai() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Overwhelming Search Results", desc: "Too many irrelevant links", icon: <FaSearch className="text-secondary" /> },
-              { title: "Doubtful Sources", desc: "Hard to tell what's credible", icon: <FaQuestionCircle className="text-secondary" /> },
-              { title: "Dense Terminology", desc: "Complex terms with no clear definitions", icon: <FaBook className="text-secondary" /> },
-              { title: "Lack of Visuals", desc: "Few images or videos to simplify learning", icon: <FaMobileAlt className="text-secondary" /> },
-              { title: "Unstructured Layouts", desc: "Cluttered content makes research harder", icon: <FaFolder className="text-secondary" /> }
+              { title: "Overwhelming Search Results", desc: "Too many irrelevant links", icon: <FaSearch className="text-primary" /> },
+              { title: "Doubtful Sources", desc: "Hard to tell what's credible", icon: <FaQuestionCircle className="text-primary" /> },
+              { title: "Dense Terminology", desc: "Complex terms with no clear definitions", icon: <FaBook className="text-primary" /> },
+              { title: "Lack of Visuals", desc: "Few images or videos to simplify learning", icon: <FaMobileAlt className="text-primary" /> },
+              { title: "Unstructured Layouts", desc: "Cluttered content makes research harder", icon: <FaFolder className="text-primary" /> }
             ].map((problem, index) => (
               <div key={index} className="bg-secondary/30 backdrop-blur-xl rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 hover:border-secondary/30 hover:bg-secondary/40 group">
                 <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{problem.icon}</div>
@@ -146,20 +146,20 @@ function Hyperflexai() {
               </div>
               
               <p className="text-primary/90 mb-6 text-lg">
-                <span className="text-secondary font-medium">Hyperflx</span> is built to solve those problems using a focused, AI-driven approach:
+                <span className="text-primary font-medium">Hyperflx</span> is built to solve those problems using a focused, AI-driven approach:
               </p>
               
               <div className="space-y-4">
                 <div className="bg-secondary/10 backdrop-blur-sm rounded-xl p-4 border-l-4 border-secondary">
                   <p className="text-primary/90">
-                    <span className="font-semibold text-secondary">AI-Powered Responses:</span> Hyperflx utilizes LLMs to generate answers and responses based on training data. Unlike platforms such as PerplexCity, it does not source its information from the web in real-time. However, it does gather images and videos from online sources for visual content generation.
+                    <span className="font-semibold text-primary">AI-Powered Responses:</span> Hyperflx utilizes LLMs to generate answers and responses based on training data. Unlike platforms such as PerplexCity, it does not source its information from the web in real-time. However, it does gather images and videos from online sources for visual content generation.
                   </p>
                 </div>
                 
                 {[
-                  { title: "Visual Support", desc: "Includes educational images and videos to aid understanding", icon: <FaChartBar className="text-secondary" /> },
-                  { title: "Instant Definitions", desc: "Explains complex academic terms clearly", icon: <FaLightbulb className="text-secondary" /> },
-                  { title: "Summarized Concepts", desc: "Offers easy-to-read summaries for faster learning", icon: <FaFileAlt className="text-secondary" /> }
+                  { title: "Visual Support", desc: "Includes educational images and videos to aid understanding", icon: <FaChartBar className="text-primary" /> },
+                  { title: "Instant Definitions", desc: "Explains complex academic terms clearly", icon: <FaLightbulb className="text-primary" /> },
+                  { title: "Summarized Concepts", desc: "Offers easy-to-read summaries for faster learning", icon: <FaFileAlt className="text-primary" /> }
                 ].map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
                     <span className="text-2xl group-hover:scale-110 transition-transform duration-300">{feature.icon}</span>
@@ -224,10 +224,10 @@ function Hyperflexai() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
               {[
-                { title: "Pre-trained Language Models", desc: "Saved time on training from scratch", icon: <FaRobot className="text-secondary" /> },
-                { title: "API Integrations", desc: "Connected to real-time academic sources", icon: <FaLink className="text-secondary" /> },
-                { title: "User Feedback Testing", desc: "Refined through real student/teacher input", icon: <FaUsers className="text-secondary" /> },
-                { title: "CI/CD Automation", desc: "Enabled fast updates and scalable improvements", icon: <FaCogs className="text-secondary" /> }
+                { title: "Pre-trained Language Models", desc: "Saved time on training from scratch", icon: <FaRobot className="text-primary" /> },
+                { title: "API Integrations", desc: "Connected to real-time academic sources", icon: <FaLink className="text-primary" /> },
+                { title: "User Feedback Testing", desc: "Refined through real student/teacher input", icon: <FaUsers className="text-primary" /> },
+                { title: "CI/CD Automation", desc: "Enabled fast updates and scalable improvements", icon: <FaCogs className="text-primary" /> }
               ].map((item, index) => (
                 <div key={index} className="text-center p-6 rounded-2xl bg-secondary/10 backdrop-blur-sm hover:bg-secondary/20 transition-all duration-300 border border-primary/10 hover:border-secondary/30 group">
                   <div className="text-4xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
@@ -239,7 +239,7 @@ function Hyperflexai() {
             
             <div className="bg-secondary/10 backdrop-blur-sm rounded-xl p-6 border-l-4 border-secondary">
               <p className="text-primary/90 text-lg">
-                <span className="font-semibold text-secondary">Result:</span> It helped us launch ahead of schedule, without compromising quality.
+                <span className="font-semibold text-primary">Result:</span> It helped us launch ahead of schedule, without compromising quality.
               </p>
             </div>
             

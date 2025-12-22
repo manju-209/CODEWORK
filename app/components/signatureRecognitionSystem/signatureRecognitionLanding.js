@@ -30,7 +30,7 @@ const SignatureRecognitionLanding = () => {
           
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-primary/5 backdrop-blur-sm mb-6">
-            <span className="text-secondary text-sm font-medium">— Signature Verification Technology —</span>
+            <span className="text-primary text-sm font-medium">— Signature Verification Technology —</span>
           </div>
 
           {/* Enhanced Heading with Gradient Text */}
@@ -49,7 +49,7 @@ const SignatureRecognitionLanding = () => {
           <div className="relative">
             <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary to-transparent rounded-full"></div>
             <p className="text-base md:text-lg w-[90%] leading-relaxed text-primary/90 pl-6 font-light">
-              The <span className="text-primary font-medium">Handwritten Signature Recognition System</span> is an innovative solution tailored for verifying handwritten signatures through sophisticated techniques like <span className="text-secondary font-medium">template matching</span> and <span className="text-secondary font-medium">correlation</span>. Employing advanced <span className="text-secondary font-medium">image processing methods</span>, this system ensures accurate authentication by comparing input signatures with a comprehensive database of existing samples.
+              The <span className="text-primary font-medium">Handwritten Signature Recognition System</span> is an innovative solution tailored for verifying handwritten signatures through sophisticated techniques like <span className="text-primary font-medium">template matching</span> and <span className="text-primary font-medium">correlation</span>. Employing advanced <span className="text-primary font-medium">image processing methods</span>, this system ensures accurate authentication by comparing input signatures with a comprehensive database of existing samples.
             </p>
           </div>
 

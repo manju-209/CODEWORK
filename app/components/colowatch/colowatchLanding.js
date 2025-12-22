@@ -44,7 +44,7 @@ const ColowatchLanding = () => {
             
             {/* Badge */}
             <div className="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-white/5 backdrop-blur-sm mb-4 sm:mb-6">
-              <span className="text-secondary text-sm font-medium">— Healthcare AI Innovation —</span>
+              <span className="text-primary text-sm font-medium">— Healthcare AI Innovation —</span>
             </div>
 
             {/* Enhanced Heading with Gradient Text */}
@@ -63,7 +63,7 @@ const ColowatchLanding = () => {
               <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary to-transparent rounded-full hidden sm:block"></div>
               <div className="sm:pl-6">
                 <p className="font-light">
-                  The <span className="text-secondary font-medium">healthcare industry</span> struggles with early <span className="text-secondary font-medium">colon cancer detection</span> due to invasive, costly procedures like colonoscopies, leading to low compliance and delayed diagnoses.
+                  The <span className="text-primary font-medium">healthcare industry</span> struggles with early <span className="text-primary font-medium">colon cancer detection</span> due to invasive, costly procedures like colonoscopies, leading to low compliance and delayed diagnoses.
                 </p>
                             </div>
             </div>
@@ -90,13 +90,13 @@ const ColowatchLanding = () => {
               
               {/* Floating tech elements */}
               <div className="absolute top-4 right-4 w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-float">
-                <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                 </svg>
               </div>
               
               <div className="absolute bottom-4 left-4 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-pulse">
-                <svg className="w-3 h-3 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>

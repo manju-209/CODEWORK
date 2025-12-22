@@ -108,7 +108,7 @@ const AIChatbotFaq = () => {
           <p className="text-primary/70 mb-4">
             Ready to integrate AI chatbots into your business?
           </p>
-          <button className="bg-primary hover:bg-primary/90 text-secondary font-bold py-3 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-glow">
+          <button className="bg-primary hover:bg-primary/90 text-primary font-bold py-3 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-glow">
             Explore Chatbot Solutions
           </button>
         </div>

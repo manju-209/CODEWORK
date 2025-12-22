@@ -274,7 +274,7 @@ const Footer = () => {
                 href="https://thecodeworx.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-bold text-secondary hover:text-secondary/80 ml-12 transition duration-300"
+                className="font-bold text-primary hover:text-primary/80 ml-12 transition duration-300"
               >
                 {/* codeworkx */}
               </a>

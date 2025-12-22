@@ -44,7 +44,7 @@ const HyperflexaiLanding = () => {
               
               {/* Badge */}
               <div className="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-white/5 backdrop-blur-sm mb-4 sm:mb-6">
-                <span className="text-secondary text-sm font-medium">— Educational AI Technology —</span>
+                <span className="text-primary text-sm font-medium">— Educational AI Technology —</span>
               </div>
 
               {/* Enhanced Heading with Gradient Text */}
@@ -63,7 +63,7 @@ const HyperflexaiLanding = () => {
               <div className="relative">
                 <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary to-transparent rounded-full hidden sm:block"></div>
                 <p className="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg w-full sm:w-[95%] lg:w-[95%] xl:w-[85%] leading-relaxed text-primary/90 sm:pl-6 font-light">
-                  <span className="text-secondary font-medium">Hyperflx.AI</span> is a search engine focused on <span className="text-secondary font-medium">academic research</span>. It simplifies learning by delivering organized, accurate, and relevant <span className="text-secondary font-medium">educational information</span>.
+                  <span className="text-primary font-medium">Hyperflx.AI</span> is a search engine focused on <span className="text-primary font-medium">academic research</span>. It simplifies learning by delivering organized, accurate, and relevant <span className="text-primary font-medium">educational information</span>.
                 </p>
               </div>
 
@@ -89,13 +89,13 @@ const HyperflexaiLanding = () => {
                 
                 {/* Floating tech elements */}
                 <div className="absolute top-4 right-4 w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-float">
-                  <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l4.27 4.27-1.41 1.41-4.27-4.27A6.5 6.5 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7.01 5 5 7.01 5 9.5S7.01 14 9.5 14 14 11.99 14 9.5 11.99 5 9.5 5z"/>
                   </svg>
                 </div>
                 
                 <div className="absolute bottom-4 left-4 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-pulse">
-                  <svg className="w-3 h-3 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                   </svg>
                 </div>

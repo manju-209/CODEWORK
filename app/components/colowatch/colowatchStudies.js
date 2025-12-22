@@ -49,7 +49,7 @@ function ColowatchStudies() {
       <div className="container mx-auto px-8 lg:px-16 relative z-10">
         {/* Enhanced Hero Section */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-8">
+          <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-primary px-6 py-3 rounded-full text-sm font-medium mb-8">
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
             Healthcare Communication
           </div>
@@ -66,13 +66,13 @@ function ColowatchStudies() {
                 Challenges Patients Face
               </h2>
               <p className="text-lg text-primary/90 leading-relaxed mb-6">
-                Deciphering <span className="text-secondary font-medium">medical reports</span> can often be an overwhelming experience for patients. The use of technical and intricate <span className="text-secondary font-medium">medical terms</span> can lead to:
+                Deciphering <span className="text-primary font-medium">medical reports</span> can often be an overwhelming experience for patients. The use of technical and intricate <span className="text-primary font-medium">medical terms</span> can lead to:
               </p>
               <div className="grid md:grid-cols-3 gap-4">
                 {[
-                  { icon: <FaExclamationTriangle className="text-secondary" />, text: "Confusion about their health and diagnosis" },
-                  { icon: <FaUnlink className="text-secondary" />, text: "A sense of disconnection from their healthcare journey" },
-                  { icon: <FaFrown className="text-secondary" />, text: "Rising stress and anxiety" }
+                  { icon: <FaExclamationTriangle className="text-primary" />, text: "Confusion about their health and diagnosis" },
+                  { icon: <FaUnlink className="text-primary" />, text: "A sense of disconnection from their healthcare journey" },
+                  { icon: <FaFrown className="text-primary" />, text: "Rising stress and anxiety" }
                 ].map((item, index) => (
                   <div key={index} className="bg-secondary/10 backdrop-blur-sm rounded-xl p-4 border-l-4 border-secondary hover:bg-secondary/15 transition-all duration-300">
                     <div className="flex items-center space-x-3">
@@ -101,7 +101,7 @@ function ColowatchStudies() {
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
               <div className="absolute bottom-6 left-6 text-primary">
                 <h3 className="text-xl font-bold mb-2">Complex Medical Reports</h3>
-                <p className="text-sm opacity-90 text-secondary">Traditional reports with technical jargon</p>
+                <p className="text-sm opacity-90 text-primary">Traditional reports with technical jargon</p>
               </div>
             </div>
             
@@ -115,7 +115,7 @@ function ColowatchStudies() {
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
               <div className="absolute bottom-6 left-6 text-primary">
                 <h3 className="text-xl font-bold mb-2">Simplified Communication</h3>
-                <p className="text-sm opacity-90 text-secondary">Clear, patient-friendly explanations</p>
+                <p className="text-sm opacity-90 text-primary">Clear, patient-friendly explanations</p>
               </div>
             </div>
           </div>
@@ -141,22 +141,22 @@ function ColowatchStudies() {
                   { 
                     title: "Simple Language Translation", 
                     desc: "Converts medical jargon into language that patients can grasp without needing a medical degree", 
-                    icon: <FaComments className="text-secondary" />
+                    icon: <FaComments className="text-primary" />
                   },
                   { 
                     title: "Visual Diagrams", 
                     desc: "Illustrative diagrams that simplify complex medical concepts", 
-                    icon: <FaChartBar className="text-secondary" />
+                    icon: <FaChartBar className="text-primary" />
                   },
                   { 
                     title: "Multilingual Support", 
                     desc: "Language support for diverse patient populations", 
-                    icon: <FaGlobe className="text-secondary" />
+                    icon: <FaGlobe className="text-primary" />
                   },
                   { 
                     title: "Contextual Definitions", 
                     desc: "Provides clear explanations to ensure complete understanding", 
-                    icon: <FaBook className="text-secondary" />
+                    icon: <FaBook className="text-primary" />
                   }
                 ].map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3 p-4 rounded-xl hover:bg-white/5 transition-colors group">
@@ -231,7 +231,7 @@ function ColowatchStudies() {
             <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
             
             <div className="text-center mb-8">
-              <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-primary px-6 py-3 rounded-full text-sm font-medium mb-6">
                 <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
                 Technology Stack
               </div>
@@ -242,10 +242,10 @@ function ColowatchStudies() {
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { title: "Natural Language Processing", desc: "Advanced NLP for medical text analysis", icon: <FaBrain className="text-secondary" /> },
-                { title: "Machine Learning", desc: "Trained on vast medical literature datasets", icon: <FaRobot className="text-secondary" /> },
-                { title: "Multi-language AI", desc: "Support for 50+ languages", icon: <FaMicrophone className="text-secondary" /> },
-                { title: "Visual Generation", desc: "AI-powered medical diagram creation", icon: <FaPalette className="text-secondary" /> }
+                { title: "Natural Language Processing", desc: "Advanced NLP for medical text analysis", icon: <FaBrain className="text-primary" /> },
+                { title: "Machine Learning", desc: "Trained on vast medical literature datasets", icon: <FaRobot className="text-primary" /> },
+                { title: "Multi-language AI", desc: "Support for 50+ languages", icon: <FaMicrophone className="text-primary" /> },
+                { title: "Visual Generation", desc: "AI-powered medical diagram creation", icon: <FaPalette className="text-primary" /> }
               ].map((tech, index) => (
                 <div key={index} className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-secondary/30 group">
                   <div className="text-4xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">{tech.icon}</div>

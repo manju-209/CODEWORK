@@ -134,7 +134,7 @@ export default function Finance() {
               
               <button 
                 type="submit"
-                className="w-full bg-transparent border-2 border-primary text-primary font-bold py-3 px-6 rounded-none transition-colors duration-200 hover:bg-primary hover:text-secondary"
+                className="w-full bg-transparent border-2 border-primary text-primary font-bold py-3 px-6 rounded-none transition-colors duration-200 hover:bg-primary hover:text-primary"
               >
                 Receive a call →
               </button>

@@ -30,7 +30,7 @@ const AiPdflanding = () => {
           
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-white/5 backdrop-blur-sm mb-6">
-            <span className="text-secondary text-sm font-medium">— AI Translation Technology —</span>
+            <span className="text-primary text-sm font-medium">— AI Translation Technology —</span>
           </div>
 
           {/* Enhanced Heading with Gradient Text */}
@@ -48,7 +48,7 @@ const AiPdflanding = () => {
           <div className="relative">
             <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary to-transparent rounded-full"></div>
             <p className="text-base md:text-lg w-[90%] leading-relaxed text-primary/90 pl-6 font-light">
-              The <span className="text-secondary font-medium">AI-powered PDF Translator</span> is an advanced AI-driven solution that translates PDF content into multiple languages, including <span className="text-secondary font-medium">Tamil, Hindi, Malayalam, Telugu, and Kannada</span>. This innovative tool ensures <span className="text-secondary font-medium">accurate translations</span> while preserving the original document's structure, making it an essential asset for businesses, researchers, and professionals worldwide.
+              The <span className="text-primary font-medium">AI-powered PDF Translator</span> is an advanced AI-driven solution that translates PDF content into multiple languages, including <span className="text-primary font-medium">Tamil, Hindi, Malayalam, Telugu, and Kannada</span>. This innovative tool ensures <span className="text-primary font-medium">accurate translations</span> while preserving the original document's structure, making it an essential asset for businesses, researchers, and professionals worldwide.
             </p>
           </div>
 
@@ -74,13 +74,13 @@ const AiPdflanding = () => {
             
             {/* Floating tech elements */}
             <div className="absolute top-4 right-4 w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-float">
-              <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
             </div>
             
             <div className="absolute bottom-4 left-4 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-pulse">
-              <svg className="w-3 h-3 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>

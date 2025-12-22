@@ -62,13 +62,13 @@ const DrivingInnovation = () => {
           <div className="mb-12">
             <div >
             </div>
-            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-6">
-              <span className="text-secondary">Technologies We </span>
-              <span className="text-secondary">
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
+              <span className="text-primary">Technologies We </span>
+              <span className="text-primary">
                 Master
               </span>
             </h3>
-            <p className="text-secondary text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="text-primary text-lg max-w-3xl mx-auto leading-relaxed">
               Powered by the latest technologies and frameworks for cutting-edge solutions
             </p>
           </div>
@@ -112,7 +112,7 @@ const DrivingInnovation = () => {
                       
                       {/* Technology Name - Always visible and centered */}
                       <div className="flex-1 flex items-center justify-center">
-                        <span className="text-xs font-semibold text-secondary tracking-wide text-center leading-tight">
+                        <span className="text-xs font-semibold text-primary tracking-wide text-center leading-tight">
                           {tech.name}
                         </span>
                       </div>

@@ -20,7 +20,7 @@ function InsightScan() {
       <div className="container mx-auto px-8 lg:px-16 py-12 relative z-10">
         {/* ====== Project Title/Intro ====== */}
         <div className="mb-12">
-        <div className="inline-flex items-center border border-secondary/30 bg-white/5 text-secondary px-6 py-3 rounded-full text-sm font-medium mb-8">
+        <div className="inline-flex items-center border border-secondary/30 bg-white/5 text-primary px-6 py-3 rounded-full text-sm font-medium mb-8">
           <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
           Radi Insight Scan: Fixing Medical Communication
         </div>
@@ -60,14 +60,14 @@ function InsightScan() {
           The Problem
         </h3>
         <ul className="space-y-4 text-primary/90 pl-4 border-l-4 border-secondary/40">
-          <li><span className="text-secondary font-semibold">73%</span> of patients can't understand their medical reports. This leads to:</li>
-          <li>• Missed follow-up appointments (<span className="text-secondary font-semibold">43%</span> of patients)</li>
+          <li><span className="text-primary font-semibold">73%</span> of patients can't understand their medical reports. This leads to:</li>
+          <li>• Missed follow-up appointments (<span className="text-primary font-semibold">43%</span> of patients)</li>
           <li>• Unnecessary anxiety and confusion</li>
           <li>• Wasted physician time explaining basic findings</li>
           <li>• Communication failures leading to malpractice suits</li>
         </ul>
         <p className="mt-3 text-primary/85">
-          <span className="text-secondary font-semibold">Root cause:</span> Medical reports are written for doctors, not patients.
+          <span className="text-primary font-semibold">Root cause:</span> Medical reports are written for doctors, not patients.
         </p>
       </div>
 
@@ -79,7 +79,7 @@ function InsightScan() {
         </h3>
         <div className="grid gap-8 md:grid-cols-3">
           <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-6 border border-primary/20 shadow-2xl">
-            <h4 className="text-xl font-bold text-secondary mb-3">Layer 1: Smart Language Processing</h4>
+            <h4 className="text-xl font-bold text-primary mb-3">Layer 1: Smart Language Processing</h4>
             <ul className="text-primary/90 space-y-1">
               <li>• Contextual AI rebuilds reports in patient-friendly language</li>
               <li>• Risk-weighted explanations for clinical significance</li>
@@ -87,12 +87,12 @@ function InsightScan() {
             </ul>
             <div className="mt-3 p-3 bg-white/10 rounded text-primary/90 text-sm">
               <div className="mb-2 font-medium">Example transformation:</div>
-              <div><span className="text-secondary">Before:</span> "Mild hepatic steatosis with no focal lesions identified"</div>
-              <div><span className="text-secondary">After:</span> "Your liver shows small fat deposits (common in 30% of adults your age). This is mild and typically improves with diet changes. No concerning masses found."</div>
+              <div><span className="text-primary">Before:</span> "Mild hepatic steatosis with no focal lesions identified"</div>
+              <div><span className="text-primary">After:</span> "Your liver shows small fat deposits (common in 30% of adults your age). This is mild and typically improves with diet changes. No concerning masses found."</div>
             </div>
           </div>
           <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-6 border border-primary/20 shadow-2xl">
-            <h4 className="text-xl font-bold text-secondary mb-3">Layer 2: Dynamic Visual Intelligence</h4>
+            <h4 className="text-xl font-bold text-primary mb-3">Layer 2: Dynamic Visual Intelligence</h4>
             <ul className="text-primary/90 space-y-1">
               <li>• Anatomical maps show exact location of findings</li>
               <li>• Comparative visualizations show results spectrum</li>
@@ -100,7 +100,7 @@ function InsightScan() {
             </ul>
           </div>
           <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-6 border border-primary/20 shadow-2xl">
-            <h4 className="text-xl font-bold text-secondary mb-3">Layer 3: Predictive Communication</h4>
+            <h4 className="text-xl font-bold text-primary mb-3">Layer 3: Predictive Communication</h4>
             <ul className="text-primary/90 space-y-1">
               <li>• Anxiety prediction for sensitive findings</li>
               <li>• Pre-answers likely patient questions</li>
@@ -117,10 +117,10 @@ function InsightScan() {
           Technical Stack
         </h3>
         <ul className="space-y-2 text-primary/90 list-disc list-inside pl-3">
-          <li><span className="font-semibold text-secondary">AI & NLP:</span> Proprietary medical ontology mapping 180,000+ terms</li>
-          <li><span className="font-semibold text-secondary">React.js:</span> Mobile-optimized interface for hospitals</li>
-          <li><span className="font-semibold text-secondary">Node.js:</span> HIPAA-compliant backend (10,000+ reports/day)</li>
-          <li><span className="font-semibold text-secondary">MongoDB:</span> Flexible, complex data handling</li>
+          <li><span className="font-semibold text-primary">AI & NLP:</span> Proprietary medical ontology mapping 180,000+ terms</li>
+          <li><span className="font-semibold text-primary">React.js:</span> Mobile-optimized interface for hospitals</li>
+          <li><span className="font-semibold text-primary">Node.js:</span> HIPAA-compliant backend (10,000+ reports/day)</li>
+          <li><span className="font-semibold text-primary">MongoDB:</span> Flexible, complex data handling</li>
         </ul>
       </div>
 
@@ -131,11 +131,11 @@ function InsightScan() {
           Results After 6 Months
         </h3>
         <ul className="space-y-4 text-primary/90 pl-4 border-l-4 border-secondary/40">
-          <li><span className="text-secondary font-semibold">89%</span> of patients report better understanding</li>
-          <li><span className="text-secondary font-semibold">76%</span> reduction in follow-up calls for clarification</li>
-          <li><span className="text-secondary font-semibold">45%</span> reduction in physician time spent explaining reports</li>
-          <li><span className="text-secondary font-semibold">29%</span> improvement in treatment adherence rates</li>
-          <li><span className="text-secondary font-semibold">56%</span> increase in informed patient questions during consultations</li>
+          <li><span className="text-primary font-semibold">89%</span> of patients report better understanding</li>
+          <li><span className="text-primary font-semibold">76%</span> reduction in follow-up calls for clarification</li>
+          <li><span className="text-primary font-semibold">45%</span> reduction in physician time spent explaining reports</li>
+          <li><span className="text-primary font-semibold">29%</span> improvement in treatment adherence rates</li>
+          <li><span className="text-primary font-semibold">56%</span> increase in informed patient questions during consultations</li>
         </ul>
       </div>
 
@@ -146,10 +146,10 @@ function InsightScan() {
           What Makes Us Different
         </h3>
         <ul className="space-y-3 text-primary/90 pl-4 border-l-4 border-secondary/40">
-          <li>• <span className="font-semibold text-secondary">Clinical integration:</span> Works within EHR systems</li>
-          <li>• <span className="font-semibold text-secondary">Cultural intelligence:</span> True multilingual adaptation, not just translation</li>
-          <li>• <span className="font-semibold text-secondary">Continuous learning:</span> AI improves with every processed report</li>
-          <li>• <span className="font-semibold text-secondary">Provider-friendly:</span> Reduces — not adds to — physician workload</li>
+          <li>• <span className="font-semibold text-primary">Clinical integration:</span> Works within EHR systems</li>
+          <li>• <span className="font-semibold text-primary">Cultural intelligence:</span> True multilingual adaptation, not just translation</li>
+          <li>• <span className="font-semibold text-primary">Continuous learning:</span> AI improves with every processed report</li>
+          <li>• <span className="font-semibold text-primary">Provider-friendly:</span> Reduces — not adds to — physician workload</li>
         </ul>
       </div>
 

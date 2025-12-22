@@ -25,7 +25,7 @@ function PdfTranslator() {
       <div className="container mx-auto px-6 sm:px-8 md:px-16 py-12 relative z-10">
         {/* Introduction */}
         <div className="mb-12">
-          <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-8">
+          <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-primary px-6 py-3 rounded-full text-sm font-medium mb-8">
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
             PDF Translation Technology
           </div>
@@ -34,8 +34,8 @@ function PdfTranslator() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mb-6"></div>
           <p className="pl-8 text-xl text-primary/90 leading-relaxed font-light max-w-4xl border-l-4 border-secondary/30">
-            <span className="text-secondary font-semibold">Introduction:</span> <br />
-            We created an AI-powered PDF Translator with the intent of enabling users to translate PDF documents conveniently. This powerful tool is compatible with Indian languages like <span className="text-secondary font-medium">Tamil, Hindi, Malayalam, Telugu, and Kannada</span>, and it retains the document’s original formatting.<br /><br />
+            <span className="text-primary font-semibold">Introduction:</span> <br />
+            We created an AI-powered PDF Translator with the intent of enabling users to translate PDF documents conveniently. This powerful tool is compatible with Indian languages like <span className="text-primary font-medium">Tamil, Hindi, Malayalam, Telugu, and Kannada</span>, and it retains the document’s original formatting.<br /><br />
             This solution is available for businesses, professionals, and researchers to ensure seamless cross-language communication.
           </p>
         </div>
@@ -89,28 +89,28 @@ function PdfTranslator() {
           <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-8 border border-primary/20 shadow-2xl hover:bg-secondary/40 transition relative">
             <h3 className="text-3xl font-bold text-primary mb-6">Benefits of the In-House Solution</h3>
             <ul className="space-y-4 text-primary/90">
-              <li><span className="font-semibold text-secondary">Faster Translation</span> – No more tedious manual work is required for translation; it translates automatically.</li>
-              <li><span className="font-semibold text-secondary">Accurate Results</span> – Unlike most current systems, AI understands the meaning of the sentences and not merely the words used.</li>
-              <li><span className="font-semibold text-secondary">Keeps Original Format</span> – Concentrate on the content without stressing over the layout or design—no need to worry about messy formatting.</li>
-              <li><span className="font-semibold text-secondary">Secure & Confidential</span> – Multi-language support without compromising the security and privacy of documents; everything remains private.</li>
-              <li><span className="font-semibold text-secondary">Easy to Access & Use</span> – All major Indian languages supported. Simply upload or download.</li>
+              <li><span className="font-semibold text-primary">Faster Translation</span> – No more tedious manual work is required for translation; it translates automatically.</li>
+              <li><span className="font-semibold text-primary">Accurate Results</span> – Unlike most current systems, AI understands the meaning of the sentences and not merely the words used.</li>
+              <li><span className="font-semibold text-primary">Keeps Original Format</span> – Concentrate on the content without stressing over the layout or design—no need to worry about messy formatting.</li>
+              <li><span className="font-semibold text-primary">Secure & Confidential</span> – Multi-language support without compromising the security and privacy of documents; everything remains private.</li>
+              <li><span className="font-semibold text-primary">Easy to Access & Use</span> – All major Indian languages supported. Simply upload or download.</li>
             </ul>
           </div>
           <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-8 border border-primary/20 shadow-2xl hover:bg-secondary/40 transition relative">
             <h3 className="text-3xl font-bold text-primary mb-6">Technology Stack Used</h3>
             <ul className="mb-4 space-y-3 text-primary/90 list-disc list-inside">
-              <li><span className="font-semibold text-secondary">Backend</span>: Python with FastAPI for scalability</li>
-              <li><span className="font-semibold text-secondary">Frontend</span>: ReactJS for a user-friendly interface</li>
-              <li><span className="font-semibold text-secondary">Security</span>: AES encryption and secure APIs</li>
+              <li><span className="font-semibold text-primary">Backend</span>: Python with FastAPI for scalability</li>
+              <li><span className="font-semibold text-primary">Frontend</span>: ReactJS for a user-friendly interface</li>
+              <li><span className="font-semibold text-primary">Security</span>: AES encryption and secure APIs</li>
             </ul>
-            <h4 className="mt-6 mb-3 text-xl font-bold text-secondary">Rapid Build Strategies</h4>
+            <h4 className="mt-6 mb-3 text-xl font-bold text-primary">Rapid Build Strategies</h4>
             <ul className="mb-4 space-y-3 text-primary/90 list-disc list-inside">
               <li>Leveraged pre-trained models tailored for Indian languages</li>
               <li>Fine-tuned open-source PDF parsers for efficient document handling</li>
               <li>Cloud-based testing for uptime and reliability</li>
               <li>CI/CD frameworks for rapid, reliable deployment</li>
             </ul>
-            <span className="text-secondary font-semibold">Result:</span> Work was completed in record time without sacrificing quality.
+            <span className="text-primary font-semibold">Result:</span> Work was completed in record time without sacrificing quality.
           </div>
         </div>
 
@@ -124,7 +124,7 @@ function PdfTranslator() {
             </h3>
             <div className="w-20 h-1 bg-secondary rounded-full mb-8"></div>
             <p className="text-xl font-light leading-relaxed text-primary/90">
-              The <span className="font-semibold text-secondary">AI-powered PDF Translator by Codework</span> addresses real-world communication challenges. The tool provides instantaneous results, precision, and robust support for Indian languages—making seamless, secure, and efficient cross-language document handling a reality for businesses and professionals.
+              The <span className="font-semibold text-primary">AI-powered PDF Translator by Codework</span> addresses real-world communication challenges. The tool provides instantaneous results, precision, and robust support for Indian languages—making seamless, secure, and efficient cross-language document handling a reality for businesses and professionals.
             </p>
           </div>
         </div>
