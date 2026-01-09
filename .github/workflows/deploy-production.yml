@@ -1,27 +1,54 @@
-name: Deploy to S3
+name: CodeWork-Marketing-Production-AWS
 
 on:
   push:
     branches:
-      - main   # Run when pushing to main branch
+      - newchange
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  build_and_deploy_job:
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'push'
     runs-on: ubuntu-latest
-
+    name: Build and Deploy Job
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
 
-      - name: Configure AWS credentials
+      # Step 1: Checkout repository
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+          lfs: false
+
+      # Step 2: Set up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # Step 3: Install dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      # Step 4: Build the application
+      - name: Build Application
+        run: npm run build
+
+      # Step 5: Configure AWS credentials
+      - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-         env:
-              AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-              AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1   # Change to your AWS region
 
-          aws-region: us-east-1   # change your region
-
-      - name: Sync files to S3
+      # Step 6: Deploy to S3 bucket
+      - name: Deploy to S3
         run: |
-          aws s3 sync ./your-folder s3://code-site-9-1-2026 --delete
+          echo "Deploying to S3 bucket..."
+          aws s3 sync ./build s3://code-site-9-1-2026 --delete
+
+      # Step 7: Optional - Invalidate CloudFront (if using CDN)
+      # Uncomment and add your CloudFront Distribution ID
+      # - name: Invalidate CloudFront cache
+      #   run: |
+      #     aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
