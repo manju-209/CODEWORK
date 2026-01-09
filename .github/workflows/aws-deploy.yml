@@ -1,9 +1,9 @@
-name: AWS S3 Deployment
+name: Deploy to Production
 
 on:
   push:
     branches:
-      - main    # Change if you use another branch
+      - main    # Trigger workflow only on main branch
 
 jobs:
   build-and-deploy:
@@ -14,7 +14,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # Step 2: Setup Node.js (if your app is React/Node)
+      # Step 2: Set up Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -32,10 +32,12 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id: ${{ secrets.AKIA2GL6C23NKBLHTMOG }}
-          aws-secret-access-key: ${{ secrets.oifqiKHqtbsXw3tQYTHnqDscWLAG6PNVjRF/GD1j }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1   # Change to your AWS region
 
       # Step 6: Deploy to S3 bucket
       - name: Deploy to S3
-        run: aws s3 sync build/ s3://code-site-9-1-2026 --delete
+        run: |
+          echo "Deploying to S3 bucket..."
+          aws s3 sync build/ s3://code-site-9-1-2026 --delete
