@@ -25,11 +25,11 @@ jobs:
         with:
           node-version: 18
 
-      # Step 3: Install dependencies
+      # Step 3: Install dependencies with legacy peer deps
       - name: Install Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
-      # Step 4: Build the application
+      # Step 4: Build the Next.js application
       - name: Build Application
         run: npm run build
 
@@ -39,16 +39,15 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-south-1   # Change to your AWS region
+          aws-region: ap-south-1
 
-      # Step 6: Deploy to S3 bucket
+      # Step 6: Deploy to S3 (use correct folder)
       - name: Deploy to S3
         run: |
           echo "Deploying to S3 bucket..."
-          aws s3 sync ./build s3://code-site-9-1-2026 --delete
+          aws s3 sync ./out s3://code-site-9-1-2026 --delete
 
-      # Step 7: Optional - Invalidate CloudFront (if using CDN)
-      # Uncomment and add your CloudFront Distribution ID
+      # Step 7: Optional - Invalidate CloudFront cache
       # - name: Invalidate CloudFront cache
       #   run: |
       #     aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
