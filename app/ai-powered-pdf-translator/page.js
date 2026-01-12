@@ -1,14 +1,14 @@
-import React from 'react'
-import AiPdflanding from '../components/aiPoweredPdfTranslator/aiPdflanding'
-import PdfTranslator from '../components/aiPoweredPdfTranslator/pdfTranslator'
+'use client';
 
-const page = () => {
+import AipdfLanding from '../components/aiPoweredPdfTranslator/aipdfLanding';
+import PdfTranslator from '../components/aiPoweredPdfTranslator/pdfTranslator';
+
+export default function Page() {
   return (
     <div>
-        <AiPdflanding/>
-        <PdfTranslator/>
+      <AipdfLanding />
+      <PdfTranslator />
     </div>
-  )
+  );
 }
 
-export default page

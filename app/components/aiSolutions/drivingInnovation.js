@@ -9,13 +9,14 @@ import {
   SiPython,
   SiOpenjdk,
   SiR,
-  SiMicrosoft,
+  SiMicrosoftazure,
   SiDocker,
   SiKubernetes,
   SiGraphql,
   SiTypescript,
   SiPostgresql
 } from 'react-icons/si';
+import { FaMicrosoft } from "react-icons/fa";
 
 const DrivingInnovation = () => {
   // Enhanced Technology Icons Data with fallback handling
@@ -26,7 +27,7 @@ const DrivingInnovation = () => {
     { name: "Python", Icon: SiPython, color: "#3776AB" },
     { name: "Java", Icon: SiOpenjdk, color: "#ED8B00" },
     { name: "R Language", Icon: SiR, color: "#276DC3" },
-    { name: "Microsoft Azure", Icon: SiMicrosoft, color: "#0078D4" },
+    { name: "Microsoft Azure", Icon: FaMicrosoft, color: "#0078D4" },
     { name: "Docker", Icon: SiDocker, color: "#2496ED" },
     { name: "Kubernetes", Icon: SiKubernetes, color: "#326CE5" },
     { name: "GraphQL", Icon: SiGraphql, color: "#E10098" },
