@@ -1,4 +1,4 @@
-name: Build & Deploy
+name: CodeWork Marketing – Build & Deploy
 
 on:
   push:
@@ -8,29 +8,44 @@ on:
   pull_request:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      # 1️⃣ Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
+      # 2️⃣ Setup Node.js
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 18
+          cache: npm
 
+      # 3️⃣ Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm ci --legacy-peer-deps
 
+      # 4️⃣ Disable Next.js telemetry
+      - name: Disable Next.js telemetry
+        run: npx next telemetry disable
+
+      # 5️⃣ Build application
       - name: Build project
         run: npm run build
 
+      # 6️⃣ Configure AWS credentials
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1
+
+      # 7️⃣ Deploy to S3
       - name: Deploy to S3
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: "your-region"
-        run: |
-          aws s3 sync ./build s3://your-bucket-name --delete
+        run: aws s3 sync ./out s3://code-site-9-1-2026 --delete
