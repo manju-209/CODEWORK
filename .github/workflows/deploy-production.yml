@@ -7,59 +7,41 @@ on:
   workflow_dispatch:
 
 jobs:
-  build_and_deploy_job:
+  build_and_deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout repository
+      # 1️⃣ Checkout code
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js
+      # 2️⃣ Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: npm
 
-      # Step 3: Cache Node modules
-      - name: Cache Node modules
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      # Step 4: Install dependencies
-      - name: Install Dependencies
+      # 3️⃣ Install dependencies
+      - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
-      # Step 5: Disable Next.js telemetry
+      # 4️⃣ Disable Next.js telemetry
       - name: Disable Next.js telemetry
         run: npx next telemetry disable
 
-      # Step 6: Cache Next.js build
-      - name: Cache Next.js build
-        uses: actions/cache@v3
-        with:
-          path: .next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-nextjs-
-
-      # Step 7: Build Application
-      - name: Build Application
+      # 5️⃣ Build Next.js app
+      - name: Build application
         run: npm run build
 
-      # Step 8: Configure AWS Credentials
-      - name: Configure AWS Credentials
+      # 6️⃣ Configure AWS credentials (USING SECRETS)
+      - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
 
-      # Step 9: Deploy to S3
+      # 7️⃣ Deploy to S3
       - name: Deploy to S3
-        run: |
-          aws s3 sync ./out s3://code-site-9-1-2026 --delete
+        run: aws s3 sync ./out s3://code-site-9-1-2026 --delete
