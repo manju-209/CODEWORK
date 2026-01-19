@@ -1,14 +1,16 @@
 'use client';
 
-import AipdfLanding from '../components/aiPoweredPdfTranslator/aipdfLanding';
-import PdfTranslator from '../components/aiPoweredPdfTranslator/pdfTranslator';
+import AiPdfLanding from '../components/aiPoweredPdfTranslator/AiPdfLanding';
+import PdfTranslator from '../components/aiPoweredPdfTranslator/PdfTranslator';
 
 export default function Page() {
   return (
     <div>
-      <AipdfLanding />
+      <AiPdfLanding />
       <PdfTranslator />
     </div>
   );
 }
+
+
 
