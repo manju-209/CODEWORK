@@ -32,3 +32,6 @@ function PdfTranslator() {
 }
 
 export default PdfTranslator;
+
+
+
