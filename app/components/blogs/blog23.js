@@ -13,9 +13,9 @@ const Blog23 = () => {
   const tocItems = [
     { id: "what-is-artificial-intelligence", title: "What Is Artificial Intelligence?" },
     { id: "machine-learning", title: "Machine Learning: The Core of AI" },
-    { id: "deep-learning", title: "Deep Learning: Mimicking the Brain" },
+    //{ id: "deep-learning", title: "Deep Learning: Mimicking the Brain" },
     { id: "generative-ai", title: "Generative AI: Creating with Intelligence" },
-    { id: "ai-agents", title: "AI Agents and Agentic AI" },
+    //{ id: "ai-agents", title: "AI Agents and Agentic AI" },
     { id: "benefits-of-artificial-intelligence", title: "Benefits of Artificial Intelligence" },
     { id: "real-world-applications", title: "Real-World Applications of AI" },
     { id: "challenges", title: "Challenges and Risks in AI" },
@@ -54,7 +54,7 @@ const Blog23 = () => {
       <div className="max-w-screen-xl mx-auto px-4 flex gap-8">
         {/* LEFT SIDEBAR - TABLE OF CONTENTS */}
         <div className="hidden lg:block w-64 sticky top-24 h-fit">
-          <div className="bg-primary/60 backdrop-blur-sm rounded-xl border border-secondary/20 p-6 shadow-glow">
+          <div className="bg-secondary backdrop-blur-sm rounded-xl border border-primary/60 p-6 shadow-glow">
             <h3 className="text-lg font-bold text-primary mb-4 flex items-center">
               <FiList className="mr-2" />
               Table of Contents
@@ -128,7 +128,7 @@ const Blog23 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog23.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/young-person-vr-headset-with-laptop-symbolizing-advanced-technology-immersive-digital_72464-2290.jpg"
               alt="What Is Artificial Intelligence"
               fill
               className="object-cover"
@@ -145,7 +145,7 @@ const Blog23 = () => {
             <span>•</span>
             <div className="flex items-center">
               <FiClock className="mr-1 text-primary" />
-              <span>16 July 2025</span>
+              <span>24 July 2025</span>
             </div>
           </div>
 

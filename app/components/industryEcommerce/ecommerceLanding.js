@@ -4,6 +4,23 @@ import React from "react";
 const EcommerceLanding = () => {
   return (
     <section className="relative w-full min-h-screen flex items-center bg-primary overflow-hidden">
+      <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source
+            src="https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/ECommerce.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div className="absolute inset-0 bg-primary/60" />
+      </div>
+
       {/* ==== Background Decorative Circles ==== */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-40 h-40 bg-secondary/20 rounded-full" />

@@ -5,31 +5,15 @@ import React from 'react';
 const WorklogixLanding = () => {
   return (
     <>
-      <section className="relative bg-primary w-full py-12 sm:py-16 md:py-24 lg:py-36 pt-20 sm:pt-16 md:pt-24 lg:pt-36 overflow-hidden">
-        {/* Background Decorative Elements */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-32 h-32 md:w-40 md:h-40 bg-secondary/20 rounded-full"></div>
-          <div className="absolute top-60 right-32 w-24 h-24 md:w-32 md:h-32 bg-secondary/15 rounded-full"></div>
-          <div className="absolute bottom-40 left-1/3 w-36 h-36 md:w-48 md:h-48 bg-secondary/25 rounded-full"></div>
-          <div className="absolute top-1/3 right-1/4 w-20 h-20 md:w-24 md:h-24 bg-secondary/10 rounded-full"></div>
-        </div>
-
-
-        {/* Floating Elements */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-32 left-16 w-2 h-2 md:w-3 md:h-3 bg-secondary rounded-full animate-pulse"></div>
-          <div className="absolute top-48 right-20 w-1 h-1 md:w-2 md:h-2 bg-white/60 rounded-full animate-bounce"></div>
-          <div className="absolute bottom-56 left-1/4 w-3 h-3 md:w-4 md:h-4 bg-secondary/80 rounded-full animate-ping"></div>
-          <div className="absolute top-3/4 right-1/3 w-1 h-1 md:w-2 md:h-2 bg-white/40 rounded-full animate-pulse"></div>
-        </div>
+      <section className="relative bg-secondary text-primary w-full py-12 sm:py-16 md:py-24 lg:py-36 pt-20 sm:pt-16 md:pt-24 lg:pt-36 overflow-hidden">
 
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
          {/* Enhanced Logo with glow effect - Alternative Flex approach */}
 <div className="absolute top-1 left-0 right-0 flex justify-center z-30">
   <div className="relative">
-    <div className="w-28 h-14 backdrop-blur-sm rounded-2xl p-1 shadow-lg border border-white/20 flex items-center justify-center">
-    <p className="font-bold text-base bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent tracking-wide">
+    <div className="w-28 h-14 backdrop-blur-sm rounded-2xl p-1 shadow-lg border border-primary/20 flex items-center justify-center">
+    <p className="font-bold text-base text-primary tracking-wide">
       WorkLogix
     </p>
   </div>
@@ -40,25 +24,23 @@ const WorklogixLanding = () => {
 
           <div className="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-8 lg:gap-12 pt-16 lg:pr-8">
             {/* Enhanced Text Card with Brand Colors */}
-            <div className="w-full lg:w-4/12 xl:w-5/12 bg-gradient-to-br from-primary/40 via-primary/60 to-primary/80 backdrop-blur-xl border border-white/20 p-6 sm:p-8 lg:p-6 xl:p-8 rounded-xl sm:rounded-3xl text-white z-20 lg:-mr-20 xl:-mr-32 order-2 lg:order-1 lg:self-end shadow-2xl shadow-secondary/25 hover:scale-105 transition-all duration-500 relative overflow-hidden lg:ml-4">
+            <div className="w-full lg:w-4/12 xl:w-5/12 bg-gradient-to-br from-secondary/40 via-secondary/60 to-secondary/80 backdrop-blur-xl border border-primary/20 p-6 sm:p-8 lg:p-6 xl:p-8 rounded-xl sm:rounded-3xl text-primary z-20 lg:-mr-20 xl:-mr-32 order-2 lg:order-1 lg:self-end shadow-2xl shadow-primary/10 hover:scale-105 transition-all duration-500 relative overflow-hidden lg:ml-4">
               
               {/* Corner Decorations */}
               <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
               
               {/* Badge */}
-              <div className="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-white/5 backdrop-blur-sm mb-4 sm:mb-6">
-                <span className="text-secondary text-sm font-medium">— Project Management Platform —</span>
+              <div className="inline-flex items-center px-4 py-2 rounded-full border border-primary/30 bg-secondary/10 backdrop-blur-sm mb-4 sm:mb-6">
+                <span className="text-primary text-sm font-medium">— Project Management Platform —</span>
               </div>
 
 
               {/* Enhanced Heading with Gradient Text */}
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-5xl font-bold mb-3 sm:mb-4 lg:mb-4 xl:mb-6 leading-tight">
-                <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">
-                  Smarter Task
-                </span>{" "}
+                Smarter Task{" "}
                 and Team{" "}
-                <span className="text-white">Management</span>
+                <span className="text-primary">Management</span>
               </h1>
               
               {/* Decorative underline */}
@@ -67,8 +49,8 @@ const WorklogixLanding = () => {
               {/* Enhanced Paragraph */}
               <div className="relative">
                 <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary to-transparent rounded-full hidden sm:block"></div>
-                <p className="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg w-full sm:w-[95%] lg:w-[95%] xl:w-[85%] leading-relaxed text-white/90 sm:pl-6 font-light">
-                  A <span className="text-secondary font-medium">unified web platform</span> to simplify <span className="text-secondary font-medium">project tracking</span>, team collaboration, and <span className="text-secondary font-medium">performance management</span> — all in one dashboard.
+                <p className="text-sm sm:text-base md:text-lg lg:text-sm xl:text-lg w-full sm:w-[95%] lg:w-[95%] xl:w-[85%] leading-relaxed text-primary/80 sm:pl-6 font-light">
+                  A <span className="text-primary font-medium">unified web platform</span> to simplify <span className="text-primary font-medium">project tracking</span>, team collaboration, and <span className="text-primary font-medium">performance management</span> — all in one dashboard.
                 </p>
               </div>
 
@@ -96,13 +78,13 @@ const WorklogixLanding = () => {
                 
                 {/* Floating tech elements */}
                 <div className="absolute top-4 right-4 w-8 h-8 bg-secondary/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-float">
-                  <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
                   </svg>
                 </div>
                 
                 <div className="absolute bottom-4 left-4 w-6 h-6 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm animate-pulse">
-                  <svg className="w-3 h-3 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                   </svg>
                 </div>

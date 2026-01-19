@@ -52,7 +52,7 @@ const Blog30 = () => {
 
         {/* LEFT SIDEBAR - TABLE OF CONTENTS */}
         <div className="hidden lg:block w-64 sticky top-24 h-fit">
-          <div className="bg-primary/60 backdrop-blur-sm rounded-xl border border-secondary/20 p-6 shadow-glow">
+          <div className="bg-secondary backdrop-blur-sm rounded-xl border border-primary/60 p-6 shadow-glow">
             <h3 className="text-lg font-bold text-primary mb-4 flex items-center">
               <FiList className="mr-2" />
               Table of Contents
@@ -137,7 +137,7 @@ const Blog30 = () => {
           {/* META */}
           <div className="flex items-center text-sm text-primary mb-10 space-x-3">
             <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-extrabold drop-shadow-glow">
-              F
+              K
             </div>
             <span className="uppercase tracking-wide font-semibold">keerthika</span>
             <span>•</span>

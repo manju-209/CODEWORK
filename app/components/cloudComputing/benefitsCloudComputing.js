@@ -26,7 +26,7 @@ const BenefitsCloudComputing = () => {
   ];
 
   return (
-    <div className="container mx-auto bg-secondary py-24 px-14 relative overflow-hidden">
+    <div className="container max-w-full bg-secondary py-24 px-14 relative overflow-hidden">
       {/* Background animated particles */}
       <div className="absolute inset-0 opacity-10">
         <div className="floating-particles"></div>

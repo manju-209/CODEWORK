@@ -18,6 +18,7 @@ import HomeClient from "./components/homePage/homeClient";
 import WeekResult from "./components/homePage/weekResult";
 import NextStep from "./components/homePage/nextStep";
 import AIEnabled from "./components/homePage/AIEnabled";
+import Product from "./components/homePage/homeproduct";
 
 
 export default function Home() {
@@ -93,7 +94,7 @@ export default function Home() {
         <ChatBotAi />
         <AIKeynoteCarousel />
         <AreasExcellence />
-        <OurProduct />
+        <Product />
         <SoftwareServices />
         <HomeClient />
          <AIEnabled />

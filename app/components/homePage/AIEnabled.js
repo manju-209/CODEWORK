@@ -22,18 +22,13 @@ const AIEnabled = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-8 text-primary">
+          <h2 className="text-5xl md:text-6xl font-bold mb-8 text-primary">
            AI-Enabled Marketing​
-          </h1>
+          </h2>
           <p className="text-xl md:text-2xl text-primary/70 max-w-4xl mx-auto leading-relaxed mb-12">
             CodeWork AI provides an integrated family of development tools to meet the needs of different development communities.
           </p>
 
-          {/* Learn More Button */}
-          <button className="group relative border-2 border-primary px-12 py-4 text-xl font-semibold overflow-hidden transition-all duration-300 hover:text-secondary">
-            <div className="absolute inset-0 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></div>
-            <span className="relative z-10">Learn More</span>
-          </button>
         </div>
 
         {/* Categories Grid */}

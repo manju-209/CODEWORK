@@ -5,7 +5,7 @@ import WorklogixAi from '../components/workLogix/WorklogixAi';
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-secondary text-primary">
         <WorklogixLanding/>
         <WorklogixAi/>
     </div>

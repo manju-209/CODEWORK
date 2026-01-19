@@ -4,12 +4,12 @@ import { callChatbotApi } from '@/app/lib/chatbotClient.mjs'
 
 const ChatBotAi = () => {
   const suggestions = [
-    'What does CODEWORK do?',
-    'What applications does CODEWORK have?',
-    'What industries does CODEWORK serve?',
-    'What is a CODEWORK initial production deployment?',
-    'What agentic AI solutions does CODEWORK have?',
-    'What is CODEWORK Transform?'
+            "What is Codework?",
+            "What services does Codework offers?",
+            "What industries does Codework serve?",
+            "What products does Codework provide?",
+            "How can I contact Codework?",
+            "What courses and CPLC are available?"
   ]
 
   const [query, setQuery] = useState('')
@@ -24,8 +24,8 @@ const ChatBotAi = () => {
     const value = typeof payload === 'string' ? payload : query
     const trimmed = value.trim()
 
-    if (!trimmed || trimmed.length < 3) {
-      setError('Please enter at least 3 characters.')
+    if (!trimmed || trimmed.length < 1) {
+      setError('Please enter a question.')
       return
     }
 
@@ -66,7 +66,51 @@ const ChatBotAi = () => {
     }
   }
 
-  const renderBold = (text) => {
+  const renderLinks = (text, keyPrefix) => {
+    if (!text) return []
+
+    const urlRegex = /((?:https?:\/\/|www\.)[^\s<]+)/gi
+    const nodes = []
+    let lastIndex = 0
+    let match
+
+    while ((match = urlRegex.exec(text))) {
+      const before = text.slice(lastIndex, match.index)
+      if (before) nodes.push(before)
+
+      let url = match[1]
+      let trailing = ''
+
+      while (url && /[),.!?:;]+$/.test(url)) {
+        trailing = url.slice(-1) + trailing
+        url = url.slice(0, -1)
+      }
+
+      const href = url.startsWith('http') ? url : `https://${url}`
+
+      nodes.push(
+        <a
+          key={`${keyPrefix}-${match.index}`}
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          className="text-primary underline underline-offset-2 hover:text-primary/80"
+        >
+          {url}
+        </a>
+      )
+
+      if (trailing) nodes.push(trailing)
+
+      lastIndex = match.index + match[1].length
+    }
+
+    const rest = text.slice(lastIndex)
+    if (rest) nodes.push(rest)
+    return nodes
+  }
+
+  const renderInline = (text) => {
     const parts = text.split(/(\*\*[^*]+\*\*)/g)
 
     return parts.map((part, index) => {
@@ -74,11 +118,12 @@ const ChatBotAi = () => {
         const content = part.slice(2, -2)
         return (
           <span key={index} className="font-semibold">
-            {content}
+            {renderLinks(content, `b-${index}`)}
           </span>
         )
       }
-      return <span key={index}>{part}</span>
+
+      return <span key={index}>{renderLinks(part, `t-${index}`)}</span>
     })
   }
 
@@ -92,7 +137,7 @@ const ChatBotAi = () => {
         key={index}
         className="text-sm md:text-base text-primary/90 leading-relaxed mb-3"
       >
-        {renderBold(paragraph)}
+        {renderInline(paragraph)}
       </p>
     ))
   }
@@ -100,8 +145,13 @@ const ChatBotAi = () => {
   return (
     <section className="w-full bg-secondary py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
+<<<<<<< HEAD
         <div className="mx-auto max-w-4xl bg-secondary border border-primary/20 rounded-md shadow-lg px-4 sm:px-6 py-3 sm:py-4 flex items-center gap-3">
           <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary text-sm">
+=======
+        <div className="mx-auto max-w-4xl bg-white border border-primary/20 rounded-md shadow-lg px-4 sm:px-6 py-3 sm:py-4 flex items-center gap-3">
+          <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-secondary text-primary text-sm">
+>>>>>>> newchange
             ✦
           </span>
           <input
@@ -109,13 +159,17 @@ const ChatBotAi = () => {
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Ask us anything about CODEWORK"
-            className="flex-1 bg-transparent outline-none text-primary text-sm sm:text-base placeholder:text-primary/50"
+            placeholder="Ask  about CODEWORK"
+            className="flex-1 bg-transparent outline-none text-secondary text-sm sm:text-base placeholder:text-gray-600"
           />
           <button
             type="button"
             onClick={() => handleSubmit()}
+<<<<<<< HEAD
             className="hidden sm:inline-flex items-center justify-center px-4 py-1.5 rounded-md bg-primary text-primary text-sm font-medium hover:bg-primary/90 transition-colors"
+=======
+            className="inline-flex items-center justify-center px-4 py-1.5 rounded-md bg-secondary text-primary text-sm font-medium hover:bg-gray-300 hover:text-secondary transition-colors"
+>>>>>>> newchange
           >
             Ask
           </button>

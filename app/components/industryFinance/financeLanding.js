@@ -7,16 +7,20 @@ const FinanceLanding = () => {
     <section className="relative w-full h-auto sm:h-[80vh] md:h-screen flex items-center bg-[#F6F5FF]">
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        {/* <video
+        <video
           autoPlay
           muted
           loop
           playsInline
           className="absolute w-full h-full object-cover"
+          preload="metadata"
         >
-          <source src="/landing.mp4" type="video/mp4" />
-        </video> */}
-        {/* Dark overlay for better text visibility */}
+          <source
+            src="https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/Money.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div className="absolute inset-0 bg-white/75" />
       </div>
 
       {/* Content Container - Updated width to 80% */}

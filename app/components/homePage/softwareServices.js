@@ -32,7 +32,7 @@ const SoftwareServices = () => {
       heading: 'Cloud & DevOps Solutions',
       description: 'Modernize your infrastructure with cloud-native architectures and DevOps practices. We help you achieve faster deployment cycles, improved reliability, and optimal resource utilization across your technology stack.',
       buttonText: 'Optimize Infrastructure',
-      buttonLink: 'https://codework.ai//cloud-computing'
+      buttonLink: 'https://codework.ai/cloud-computing'
     },
     'ai-certification': {
       title: 'AI Certification',
@@ -47,10 +47,10 @@ const SoftwareServices = () => {
   const activeServiceData = services[activeService];
 
   return (
-    <div className="min-h-screen bg-secondary text-primary">
+    <div className=" bg-secondary text-primary">
       {/* Header */}
       <div className="text-center  pb-12">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 text-primary">AI Powered solution</h1>
+        <h2 className="text-5xl md:text-6xl font-bold mb-4 text-primary">AI powered solution</h2>
       </div>
 
       {/* Navigation Tabs */}

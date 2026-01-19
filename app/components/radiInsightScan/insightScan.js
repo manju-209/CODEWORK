@@ -17,17 +17,17 @@ function InsightScan() {
         <div className="absolute bottom-56 left-1/4 w-3 h-3 bg-secondary/80 rounded-full animate-ping" />
       </div>
 
-      <div className="container mx-auto px-8 lg:px-16 py-12 relative z-10">
+      <div className="container mx-auto px-8 lg:px-16 py-12 relative z-10 text-center">
         {/* ====== Project Title/Intro ====== */}
         <div className="mb-12">
-        <div className="inline-flex items-center border border-secondary/30 bg-white/5 text-primary px-6 py-3 rounded-full text-sm font-medium mb-8">
+        <div className="inline-flex items-center justify-center border border-secondary/30 bg-white/5 text-primary px-6 py-3 rounded-full text-sm font-medium mb-8 mx-auto">
           <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
           Radi Insight Scan: Fixing Medical Communication
         </div>
         <h2 className="text-5xl font-bold text-primary mb-6">
           Turn Medical Jargon into <span className="bg-gradient-to-r from-primary via-primary-400 to-primary bg-clip-text text-transparent">Patient Understanding</span>
         </h2>
-        <p className="pl-8 text-xl text-primary/90 leading-relaxed font-light max-w-4xl border-l-4 border-secondary/30">
+        <p className="text-xl text-primary/90 leading-relaxed font-light max-w-4xl mx-auto">
           Our mission: Transform every medical report from a source of confusion into a tool for patient empowerment.
         </p>
       </div>
@@ -55,29 +55,29 @@ function InsightScan() {
 
       {/* ====== The Problem ====== */}
       <div className="mb-12">
-        <h3 className="text-3xl font-bold text-primary mb-4 flex items-center">
+        <h3 className="text-3xl font-bold text-primary mb-4 flex items-center justify-center">
           <span className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse"></span>
           The Problem
         </h3>
-        <ul className="space-y-4 text-primary/90 pl-4 border-l-4 border-secondary/40">
+        <ul className="space-y-4 text-primary/90 max-w-4xl mx-auto text-left">
           <li><span className="text-primary font-semibold">73%</span> of patients can't understand their medical reports. This leads to:</li>
           <li>• Missed follow-up appointments (<span className="text-primary font-semibold">43%</span> of patients)</li>
           <li>• Unnecessary anxiety and confusion</li>
           <li>• Wasted physician time explaining basic findings</li>
           <li>• Communication failures leading to malpractice suits</li>
         </ul>
-        <p className="mt-3 text-primary/85">
+        <p className="mt-3 text-primary/85 max-w-4xl mx-auto text-left">
           <span className="text-primary font-semibold">Root cause:</span> Medical reports are written for doctors, not patients.
         </p>
       </div>
 
       {/* ====== Our Solution: 3-Layer Intelligence ====== */}
       <div className="mb-12">
-        <h3 className="text-3xl font-bold text-primary mb-6 flex items-center">
+        <h3 className="text-3xl font-bold text-primary mb-6 flex items-center justify-center">
           <span className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse"></span>
           Our Solution: 3-Layer Intelligence System
         </h3>
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3 text-left">
           <div className="bg-secondary/30 backdrop-blur-xl rounded-3xl p-6 border border-primary/20 shadow-2xl">
             <h4 className="text-xl font-bold text-primary mb-3">Layer 1: Smart Language Processing</h4>
             <ul className="text-primary/90 space-y-1">
@@ -112,11 +112,11 @@ function InsightScan() {
 
       {/* ====== Technical Stack ====== */}
       <div className="mb-12">
-        <h3 className="text-3xl font-bold text-primary mb-4 flex items-center">
+        <h3 className="text-3xl font-bold text-primary mb-4 flex items-center justify-center">
           <span className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse"></span>
           Technical Stack
         </h3>
-        <ul className="space-y-2 text-primary/90 list-disc list-inside pl-3">
+        <ul className="space-y-2 text-primary/90 list-disc list-inside max-w-3xl mx-auto text-left">
           <li><span className="font-semibold text-primary">AI & NLP:</span> Proprietary medical ontology mapping 180,000+ terms</li>
           <li><span className="font-semibold text-primary">React.js:</span> Mobile-optimized interface for hospitals</li>
           <li><span className="font-semibold text-primary">Node.js:</span> HIPAA-compliant backend (10,000+ reports/day)</li>
@@ -126,11 +126,11 @@ function InsightScan() {
 
       {/* ====== Results After 6 Months ====== */}
       <div className="mb-12">
-        <h3 className="text-3xl font-bold text-primary mb-4 flex items-center">
+        <h3 className="text-3xl font-bold text-primary mb-4 flex items-center justify-center">
           <span className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse"></span>
           Results After 6 Months
         </h3>
-        <ul className="space-y-4 text-primary/90 pl-4 border-l-4 border-secondary/40">
+        <ul className="space-y-4 text-primary/90 max-w-4xl mx-auto text-left">
           <li><span className="text-primary font-semibold">89%</span> of patients report better understanding</li>
           <li><span className="text-primary font-semibold">76%</span> reduction in follow-up calls for clarification</li>
           <li><span className="text-primary font-semibold">45%</span> reduction in physician time spent explaining reports</li>
@@ -141,11 +141,11 @@ function InsightScan() {
 
       {/* ====== Differentiators ====== */}
       <div className="mb-12">
-        <h3 className="text-3xl font-bold text-primary mb-4 flex items-center">
+        <h3 className="text-3xl font-bold text-primary mb-4 flex items-center justify-center">
           <span className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse"></span>
           What Makes Us Different
         </h3>
-        <ul className="space-y-3 text-primary/90 pl-4 border-l-4 border-secondary/40">
+        <ul className="space-y-3 text-primary/90 max-w-4xl mx-auto text-left">
           <li>• <span className="font-semibold text-primary">Clinical integration:</span> Works within EHR systems</li>
           <li>• <span className="font-semibold text-primary">Cultural intelligence:</span> True multilingual adaptation, not just translation</li>
           <li>• <span className="font-semibold text-primary">Continuous learning:</span> AI improves with every processed report</li>

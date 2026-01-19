@@ -48,11 +48,11 @@ const Blog11 = () => {
   }, []);
 
   return (
-    <div className="bg-primary py-12 pt-40 min-h-screen">
+    <div className="bg-secondary py-12 pt-40 min-h-screen">
       <div className="max-w-screen-xl mx-auto px-4 flex gap-8">
         {/* LEFT SIDEBAR - TABLE OF CONTENTS */}
         <div className="hidden lg:block w-64 sticky top-24 h-fit">
-          <div className="bg-primary/60 backdrop-blur-sm rounded-xl border border-secondary/20 p-6 shadow-glow">
+          <div className="bg-secondary backdrop-blur-sm rounded-xl border border-primary/60 p-6 shadow-glow">
             <h3 className="text-lg font-bold text-primary mb-4 flex items-center">
               <FiList className="mr-2" />
               Table of Contents
@@ -89,7 +89,7 @@ const Blog11 = () => {
         {/* MOBILE TOC OVERLAY */}
         {isTocOpen && (
           <div className="lg:hidden fixed inset-0 z-40 bg-secondary/50" onClick={() => setIsTocOpen(false)}>
-            <div className="bg-primary w-80 h-full overflow-y-auto p-6 shadow-xl" onClick={e => e.stopPropagation()}>
+            <div className="bg-secondary w-80 h-full overflow-y-auto p-6 shadow-xl" onClick={e => e.stopPropagation()}>
               <h3 className="text-lg font-bold text-primary mb-4 flex items-center">
                 <FiList className="mr-2" />
                 Table of Contents
@@ -126,7 +126,7 @@ const Blog11 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog11.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/cropped-shot-startup-ux-ui-front-end-designers-developing-programming-coding-mobile-application-from-prototype-wireframe-layout-mobile-application-developer-workplace-concept_68339-320.jpg"
               alt="AI in Digital Marketing"
               fill
               className="object-cover"
@@ -135,7 +135,7 @@ const Blog11 = () => {
           </div>
 
           {/* META */}
-          <div className="flex items-center text-sm text-white mb-10 space-x-3">
+          <div className="flex items-center text-sm text-primary mb-10 space-x-3">
             <div className="w-8 h-8 rounded-full bg-cyan-400/20 flex items-center justify-center text-cyan-400 font-extrabold drop-shadow-glow">
               F
             </div>
@@ -149,23 +149,23 @@ const Blog11 = () => {
 
           {/* INTRODUCTION */}
           <section id="introduction" className="scroll-mt-24">
-            <p className="text-white/80 text-xl leading-relaxed mb-10">
+            <p className="text-primary/80 text-xl leading-relaxed mb-10">
               Artificial Intelligence, or AI, has evolved beyond just being a trendy term—it's now a powerful force driving innovation across industries. It's the backbone of a new age of hyper-intelligent digital marketing. AI impacts businesses in many ways, transforming audience engagement and performance measurement with automation, predictive analytics, audience-specific content creation, and automated real-time decision making using deep learning algorithms.
             </p>
           </section>
 
           {/* 1. WHY AI IN MARKETING */}
           <section id="why-ai-matters" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Why AI in Digital Marketing Matters Today</h2>
-            <p className="text-white/80 leading-relaxed mb-10">
+            <h2 className="text-2xl font-bold text-primary mb-4">Why AI in Digital Marketing Matters Today</h2>
+            <p className="text-primary/80 leading-relaxed mb-10">
               In the past, traditional marketing heavily depended on historical data and required a lot of manual effort. Now, AI automates data analysis, personalizes user experiences, and even predicts consumer behavior, enabling marketers to work more quickly and intelligently.
             </p>
           </section>
 
           {/* 2. APPLICATIONS */}
           <section id="applications" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Applications of AI in Digital Marketing</h2>
-            <ul className="list-disc ml-6 text-white/80 mb-10 space-y-1">
+            <h2 className="text-2xl font-bold text-primary mb-4">Applications of AI in Digital Marketing</h2>
+            <ul className="list-disc ml-6 text-primary/80 mb-10 space-y-1">
               <li><strong>AI Chatbots:</strong> Provide customer service anytime and lower waiting times</li>
               <li><strong>Predictive Analytics:</strong> Spot emerging trends and estimate future campaign performance</li>
               <li><strong>Dynamic Content Generation:</strong> Generate customized communications instantly</li>
@@ -176,12 +176,12 @@ const Blog11 = () => {
 
           {/* 3. ADVANTAGES */}
           <section id="crucial-advantages" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Crucial Advantages of AI-Driven Marketing Strategies</h2>
-            <p className="text-white/80 leading-relaxed mb-6">
+            <h2 className="text-2xl font-bold text-primary mb-4">Crucial Advantages of AI-Driven Marketing Strategies</h2>
+            <p className="text-primary/80 leading-relaxed mb-6">
               Leveraged by Artificial Intelligence, companies can now analyze enormous datasets to provide tailored emails, product recommendations, and even custom websites.
             </p>
-            <ul className="list-disc ml-6 text-white/80 mb-10 space-y-1">
-              <li><strong>Enhanced Targeting:</strong> Thanks to <Link href="/machine-learning" className="text-secondary hover:underline font-medium"> machine learning</Link>, advertisers can group audiences into micro-segments using interests, behaviors, and intent, resulting in far more cost-efficient advertising.</li>
+            <ul className="list-disc ml-6 text-primary/80 mb-10 space-y-1">
+              <li><strong>Enhanced Targeting:</strong> Thanks to <Link href="/machine-learning" className="text-primary hover:underline font-medium"> machine learning</Link>, advertisers can group audiences into micro-segments using interests, behaviors, and intent, resulting in far more cost-efficient advertising.</li>
               <li><strong>Improved Decision-Making:</strong> With AI dashboards, marketers can monitor real-time metrics like click-through rates, conversions, and even bounce rates, allowing them to make strategic instant shifts.</li>
               <li><strong>Scalability:</strong> Managing 10 or even 100 campaigns, AI technologies require little to no human involvement in large-scale marketing operations.</li>
             </ul>
@@ -189,8 +189,8 @@ const Blog11 = () => {
 
           {/* 4. STATISTICS */}
           <section id="key-statistics" className="scroll-mt-24">
-            <h3 className="text-xl font-semibold text-white/80 mb-4">Key Statistics</h3>
-            <ul className="list-disc ml-6 text-white/80 mb-10 space-y-1">
+            <h3 className="text-xl font-semibold text-primary/80 mb-4">Key Statistics</h3>
+            <ul className="list-disc ml-6 text-primary/80 mb-10 space-y-1">
               <li>Time saved on manual tasks: 35%</li>
               <li>Boost in conversions from personalization: 20%</li>
               <li>Reduction in ad spend waste: 25%</li>
@@ -201,12 +201,12 @@ const Blog11 = () => {
           <section id="popular-ai-tools" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-white mb-4">Popular AI Tools for Digital Marketers</h2>
             <div className="overflow-x-auto mb-10">
-              <table className="min-w-full bg-primary border border-secondary/30 rounded-lg">
+              <table className="min-w-full bg-secondary border border-primary/30 rounded-lg ">
                 <thead>
                   <tr>
-                    <th className="py-3 px-4 text-left text-white font-semibold border-b border-secondary/20">Tool</th>
-                    <th className="py-3 px-4 text-left text-white font-semibold border-b border-secondary/20">Purpose</th>
-                    <th className="py-3 px-4 text-left text-white font-semibold border-b border-secondary/20">Highlight</th>
+                    <th className="py-3 px-4 text-left text-primary font-semibold border-b border-primary/20">Tool</th>
+                    <th className="py-3 px-4 text-left text-primary font-semibold border-b border-primary/20">Purpose</th>
+                    <th className="py-3 px-4 text-left text-primary font-semibold border-b border-primary/20">Highlight</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -222,10 +222,10 @@ const Blog11 = () => {
                     ["SEMrush", "All-in-one SEO & PPC toolkit", "AI-driven content audits, rank tracking, and gap analysis"],
                     ["Screaming Frog", "Website crawling & SEO audits", "AI-enabled crawl insights and on-site SEO fixes"],
                   ].map(([tool, purpose, highlight]) => (
-                    <tr key={tool} className="border-b border-secondary/10">
-                      <td className="py-3 px-4 text-white">{tool}</td>
-                      <td className="py-3 px-4 text-white/80">{purpose}</td>
-                      <td className="py-3 px-4 text-white/80">{highlight}</td>
+                    <tr key={tool} className="border-b border-primary/20">
+                      <td className="py-3 px-4 text-primary">{tool}</td>
+                      <td className="py-3 px-4 text-primary/80">{purpose}</td>
+                      <td className="py-3 px-4 text-primary/80">{highlight}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -235,8 +235,8 @@ const Blog11 = () => {
 
           {/* 6. FUTURE TRENDS */}
           <section id="future-trends" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Future Trends to Watch</h2>
-            <ul className="list-disc ml-6 text-white/80 mb-10 space-y-1">
+            <h2 className="text-2xl font-bold text-primary mb-4">Future Trends to Watch</h2>
+            <ul className="list-disc ml-6 text-primary/80 mb-10 space-y-1">
               <li><strong>Voice Search Optimization:</strong> AI enables precise targeting using voice analysis.</li>
               <li><strong>Visual Recognition AI:</strong> Analyzes visual interests for promotional materials.</li>
               <li><strong>AI Video Generation:</strong> Software that produces marketing videos from scripts with voiceovers.</li>
@@ -246,8 +246,8 @@ const Blog11 = () => {
 
           {/* FINAL THOUGHTS */}
           <section id="final-thoughts" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-white mb-4">Final Thoughts</h2>
-            <p className="text-white/80 leading-relaxed mb-6">
+            <h2 className="text-2xl font-bold text-primary mb-4">Final Thoughts</h2>
+            <p className="text-primary/80 leading-relaxed mb-6">
               Embracing AI is fundamentally shifting the landscape of digital marketing. The adoption of AI technologies improves productivity and empowers brands with new avenues of creativity, more intelligent targeting, and increased returns on investment. Businesses that want to remain relevant in the industry should adopt new strategies, optimize, and leverage AI tools.
             </p>
           </section>

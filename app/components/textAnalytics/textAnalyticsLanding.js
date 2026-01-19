@@ -4,21 +4,7 @@ import React from 'react'
 const TextAnalyticsLanding = () => {
   return (
     <section className="relative bg-secondary w-full py-36 pl-36 overflow-hidden">
-      {/* Background Decorative Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-32 h-32 md:w-40 md:h-40 bg-secondary/20 rounded-full"></div>
-        <div className="absolute top-60 right-32 w-24 h-24 md:w-32 md:h-32 bg-secondary/15 rounded-full"></div>
-        <div className="absolute bottom-40 left-1/3 w-36 h-36 md:w-48 md:h-48 bg-secondary/25 rounded-full"></div>
-        <div className="absolute top-1/3 right-1/4 w-20 h-20 md:w-24 md:h-24 bg-secondary/10 rounded-full"></div>
-      </div>
-
-      {/* Floating Elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-32 left-16 w-2 h-2 md:w-3 md:h-3 bg-secondary rounded-full animate-pulse"></div>
-        <div className="absolute top-48 right-20 w-1 h-1 md:w-2 md:h-2 bg-white/60 rounded-full animate-bounce"></div>
-        <div className="absolute bottom-56 left-1/4 w-3 h-3 md:w-4 md:h-4 bg-secondary/80 rounded-full animate-ping"></div>
-        <div className="absolute top-3/4 right-1/3 w-1 h-1 md:w-2 md:h-2 bg-white/40 rounded-full animate-pulse"></div>
-      </div>
+     
 
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4 relative z-10">
         {/* Enhanced Text Card with Brand Colors */}
@@ -36,7 +22,7 @@ const TextAnalyticsLanding = () => {
           {/* Enhanced Heading with Gradient Text */}
           <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
             Transforming Caregiver Communication with{" "}
-            <span className="bg-gradient-to-r from-primary via-primary-400 to-secondary bg-clip-text text-transparent">
+            <span className="text-primary font-bold">
               Text Analytics
             </span>
           </h2>

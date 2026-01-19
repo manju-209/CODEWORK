@@ -26,31 +26,27 @@ const BenefitsOfDevOps = () => {
   ];
 
   return (
-    <div className="container mx-auto bg-secondary py-24 px-14 relative overflow-hidden">
-      {/* Background animated particles */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="floating-particles"></div>
-      </div>
+    <div className="container mx-auto bg-secondary py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-10 lg:px-14 relative overflow-hidden">
       
-      <div className="flex flex-col md:flex-row items-start gap-8 relative z-10">
+      <div className="flex flex-col lg:flex-row items-start gap-6 sm:gap-8 md:gap-10 lg:gap-12 relative z-10">
         {/* Left side - Title and subtitle */}
-        <div className="md:w-1/3">
+        <div className="w-full lg:w-1/3">
           <h2 
-            className="text-4xl font-bold text-primary mb-6 animate-fade-in-left"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-primary mb-4 sm:mb-5 md:mb-6 animate-fade-in-left"
           >
             Key Benefits of DevOps Solutions
           </h2>
-          <p className="text-primary text-lg leading-relaxed animate-fade-in-left-delay">
+          <p className="text-primary text-sm sm:text-base md:text-lg leading-relaxed animate-fade-in-left-delay">
             A well-designed DevOps strategy serves as the backbone of modern software development, influencing delivery speed and operational efficiency. Implementing professional DevOps solutions offers:
           </p>
         </div>
         
         {/* Right side - Benefits */}
-        <div className="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
           {benefits.map(({ title, hoverText }, index) => (
             <div 
               key={index} 
-              className="rounded-xl p-6 bg-gradient-to-br from-secondary/30 via-secondary/10 to-secondary/40 text-primary transition-all duration-500 relative overflow-hidden group h-[120px] border border-secondary/20 cursor-pointer hover:scale-105 hover:rotate-1 animate-fade-in-up"
+              className="rounded-lg sm:rounded-xl p-4 sm:p-5 md:p-6 bg-gradient-to-br from-secondary/30 via-secondary/10 to-secondary/40 text-primary transition-all duration-500 relative overflow-hidden group min-h-[100px] sm:min-h-[110px] md:min-h-[120px] border border-secondary/20 cursor-pointer hover:scale-105 hover:rotate-1 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Static gradient overlay */}
@@ -64,20 +60,20 @@ const BenefitsOfDevOps = () => {
               </div>
               
               {/* Glowing border accent on hover */}
-              <div className="absolute inset-0 rounded-xl border border-secondary/30 group-hover:border-secondary/80 transition-all duration-500" />
+              <div className="absolute inset-0 rounded-lg sm:rounded-xl border border-secondary/30 group-hover:border-secondary/80 transition-all duration-500" />
               
               {/* Floating glow effect */}
-              <div className="absolute -top-2 -right-2 w-4 h-4 bg-secondary/40 rounded-full opacity-0 group-hover:opacity-100 animate-ping transition-opacity duration-300"></div>
+              <div className="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 w-3 h-3 sm:w-4 sm:h-4 bg-secondary/40 rounded-full opacity-0 group-hover:opacity-100 animate-ping transition-opacity duration-300"></div>
               
               {/* Content */}
               <div className="relative z-10 flex flex-col justify-center h-full">
                 {/* Default title text */}
-                <p className="font-bold text-lg group-hover:opacity-0 transition-opacity duration-300 absolute top-0 left-0 text-primary">
+                <p className="font-bold text-base sm:text-lg md:text-xl group-hover:opacity-0 transition-opacity duration-300 absolute top-0 left-0 text-primary">
                   {title}
                 </p>
                 
                 {/* Hover text */}
-                <p className="font-medium text-primary text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-0 left-0 right-0 leading-relaxed">
+                <p className="font-medium text-primary text-xs sm:text-sm md:text-base opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-0 left-0 right-0 leading-relaxed">
                   {hoverText}
                 </p>
               </div>

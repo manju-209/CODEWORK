@@ -11,8 +11,22 @@ const WeListening = () => {
     message: '',
   });
 
+  const [errors, setErrors] = useState({});
   const [responseMessage, setResponseMessage] = useState('');
   const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const isValidEmail = (value) => {
+    const email = String(value || '').trim();
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  const handleFormKeyDown = (event) => {
+    if (event.key !== 'Enter') return;
+    const target = event.target;
+    if (target && target.tagName === 'TEXTAREA') return;
+    event.preventDefault();
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,29 +34,58 @@ const WeListening = () => {
       ...prevData,
       [name]: value,
     }));
+    setErrors((prev) => ({ ...prev, [name]: '' }));
+  };
+
+  const validate = () => {
+    const newErrors = {};
+    const name = String(formData.name || '').trim();
+    const subject = String(formData.subject || '').trim();
+    const email = String(formData.email || '').trim();
+    const message = String(formData.message || '').trim();
+
+    if (!name) newErrors.name = 'Name is required';
+    if (!subject) newErrors.subject = 'Subject is required';
+    if (!email) newErrors.email = 'Email is required';
+    if (email && !isValidEmail(email)) newErrors.email = 'Enter a valid email';
+    if (!message) newErrors.message = 'Message is required';
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
     setResponseMessage('');
+    if (!validate()) return;
+
+    setLoading(true);
 
     try {
+      const name = String(formData.name || '').trim();
+      const subject = String(formData.subject || '').trim();
+      const email = String(formData.email || '').trim();
+      const message = String(formData.message || '').trim();
+
       const url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/marketing_site/add_contact_details`;
       const response = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ name, subject, email, message }),
       });
 
       if (!response.ok) {
-        throw new Error('Failed to send contact details.');
+        const result = await response.json().catch(() => ({}));
+        setResponseMessage(result.message || 'Failed to send contact details.');
+        return;
       }
 
       const data = await response.json();
-      setResponseMessage(data.message || 'Message sent successfully!');
+      setResponseMessage('Thanks for reaching out to us, We will get back to you soon');
+      setTimeout(() => setResponseMessage(''), 3000);
+      setSubmitted(true);
       setFormData({
         name: '',
         email: '',
@@ -65,9 +108,9 @@ const WeListening = () => {
           </Link>
         </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-4">Other Inquiries</h1>
-        <p className="text-lg mb-12">If you’re looking for career opportunities, please visit <a href="https://codework.ai/careers" target="_blank" rel="noopener noreferrer" className="underline">codework.ai/careers</a>.</p>
+        <p className="text-lg mb-12">If you’re looking for career opportunities, please visit <a href="https://codework.ai/careers-at-codework" target="_blank" rel="noopener noreferrer" className="underline">codework.ai/careers</a>.</p>
 
-        <form onSubmit={handleSubmit} className="space-y-10">
+        <form onSubmit={handleSubmit} onKeyDown={handleFormKeyDown} className="space-y-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
               <label className="block text-base font-semibold mb-2">Name: <span className="text-red-500">*</span></label>
@@ -78,6 +121,7 @@ const WeListening = () => {
                 onChange={handleChange}
                 className="w-full bg-transparent border-b border-secondary py-2 outline-none"
               />
+              {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
             </div>
             <div>
               <label className="block text-base font-semibold mb-2">Subject: <span className="text-red-500">*</span></label>
@@ -88,6 +132,9 @@ const WeListening = () => {
                 onChange={handleChange}
                 className="w-full bg-transparent border-b border-secondary py-2 outline-none"
               />
+              {errors.subject && (
+                <p className="text-red-500 text-xs mt-1">{errors.subject}</p>
+              )}
             </div>
           </div>
 
@@ -100,6 +147,9 @@ const WeListening = () => {
               onChange={handleChange}
               className="w-full bg-transparent border-b border-secondary py-2 outline-none"
             />
+            {errors.email && (
+              <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+            )}
           </div>
 
           <div>
@@ -111,9 +161,16 @@ const WeListening = () => {
               rows={6}
               className="w-full bg-transparent border border-secondary px-3 py-3 outline-none min-h-[12rem]"
             />
+            {errors.message && (
+              <p className="text-red-500 text-xs mt-1">{errors.message}</p>
+            )}
           </div>
 
+<<<<<<< HEAD
           <button type="submit" disabled={loading} className="px-10 py-4 border border-secondary rounded-none text-primary font-semibold w-fit hover:bg-secondary hover:text-primary transition">
+=======
+          <button type="submit" disabled={loading || submitted} className="px-10 py-4 border border-secondary rounded-none text-secondary font-semibold w-fit hover:bg-secondary hover:text-primary transition">
+>>>>>>> newchange
             {loading ? 'Submitting…' : 'Submit'}
           </button>
 

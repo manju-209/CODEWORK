@@ -103,15 +103,6 @@ const Faqs8 = () => {
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center mt-12">
-          <p className="text-primary/70 mb-4">
-            Interested in implementing similar AI initiatives for your region or organization?
-          </p>
-          <button className="bg-secondary hover:bg-secondary/90 text-primary font-bold py-3 px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-glow">
-            Explore AI Infrastructure Solutions
-          </button>
-        </div>
       </div>
       <style jsx>{`
         .drop-shadow-glow {

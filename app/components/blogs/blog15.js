@@ -19,8 +19,8 @@ const Blog15 = () => {
     { id: "reallife-applications", title: "Real-Life Applications of Machine Learning" },
     { id: "common-challenges", title: "Common Machine Learning Challenges to Overcome" },
     { id: "selecting-the-best-platform", title: "How to Select the Best AI Platform" },
-    { id: "conclusion", title: "Conclusion" },
-    { id: "explore", title: "Explore More" },
+    //{ id: "conclusion", title: "Conclusion" },
+    //{ id: "explore", title: "Explore More" },
   ];
 
   // Smooth scroll to section
@@ -54,7 +54,7 @@ const Blog15 = () => {
       <div className="max-w-screen-xl mx-auto px-4 flex gap-8">
         {/* LEFT SIDEBAR - TABLE OF CONTENTS */}
         <div className="hidden lg:block w-64 sticky top-24 h-fit">
-          <div className="bg-secondary/60 backdrop-blur-sm rounded-xl border border-primary/20 p-6 shadow-glow">
+          <div className="bg-secondary backdrop-blur-sm rounded-xl border border-primary/60 p-6 shadow-glow">
             <h3 className="text-lg font-bold text-primary mb-4 flex items-center">
               <FiList className="mr-2" />
               Table of Contents
@@ -128,7 +128,7 @@ const Blog15 = () => {
           {/* FEATURE IMAGE */}
           <div className="relative w-full h-[400px] border-4 border-primary border-t-0 border-l-0 rounded-lg overflow-hidden mb-8 shadow-glow">
             <Image
-              src="/blog/blog15.jpg"
+              src="https://codework-ebook.s3.amazonaws.com/codework-media/blogs/generative-ai-virtual-assistant-tools-prompt-engineer-end-user-snugly_31965-473234.jpg"
               alt="What is Machine Learning"
               fill
               className="object-cover"
@@ -145,7 +145,7 @@ const Blog15 = () => {
             <span>•</span>
             <div className="flex items-center">
               <FiClock className="mr-1 text-primary-400" />
-              <span>16 July 2025</span>
+              <span>21 July 2025</span>
             </div>
           </div>
 

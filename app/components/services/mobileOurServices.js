@@ -28,7 +28,7 @@ const MobileOurServices = () => {
     { title: "IT Staff Augmentation", icon: FaUsers, link: "/it-staff-service" },
     { title: "AI Implementation", icon: FaLock, link: "/ai-implementation" },
     { title: " AI in Digital Marketing Services", icon: FaBullhorn, link: "/digital-marketing-services" },
-          { title: "Professional Annotation Services", link: "/annotation-services" },
+    { title: "Professional Annotation Services", icon: FaGlobe, link: "/annotation-services" },
 
   ];
 
@@ -42,37 +42,19 @@ const MobileOurServices = () => {
     page === 0 ? services.slice(0, 5) : services.slice(5, services.length);
 
   return (
-    <div className="py-16 px-4 sm:px-6 md:px-8 lg:px-8 xl:px-12 relative bg-primary overflow-hidden">
-      {/* Background Decorative Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-32 h-32 bg-secondary/20 rounded-full animate-blob"></div>
-        <div className="absolute top-60 right-32 w-24 h-24 bg-secondary/15 rounded-full animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-40 left-1/3 w-40 h-40 bg-secondary/25 rounded-full animate-blob animation-delay-4000"></div>
-        <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-secondary/10 rounded-full animate-blob animation-delay-1000"></div>
-      </div>
+    <div className="py-16 px-4 sm:px-6 md:px-8 lg:px-8 xl:px-12 relative bg-secondary overflow-hidden">
 
-      {/* Floating Elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-16 left-8 w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
-        <div className="absolute top-32 right-12 w-1 h-1 bg-white/60 rounded-full animate-pulse animation-delay-1000"></div>
-        <div className="absolute bottom-24 left-1/4 w-3 h-3 bg-secondary/80 rounded-full animate-pulse animation-delay-2000"></div>
-        <div className="absolute top-3/4 right-1/3 w-1 h-1 bg-white/40 rounded-full animate-pulse animation-delay-3000"></div>
-      </div>
+
 
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 sm:gap-10 md:gap-12 lg:gap-12 xl:gap-16 relative z-10">
         <div className="w-full lg:w-1/2 ml-0 md:ml-12 lg:ml-28">
           
           {/* Enhanced Header Section */}
           <div className="mb-8">
-            {/* Section Badge */}
-            <div className="inline-flex items-center px-4 py-2 rounded-full border border-secondary/30 bg-white/5 backdrop-blur-sm mb-4 animate-fade-in">
-              <span className="text-secondary text-sm font-medium">— Our Services —</span>
-            </div>
-
             {/* Enhanced Title */}
-            <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 animate-slide-up">
-              <span className="text-white">Our </span>
-              <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-primary mb-4 animate-slide-up">
+              <span className="text-primary">Our </span>
+              <span className="bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent">
                 Services
               </span>
             </h2>
@@ -81,7 +63,7 @@ const MobileOurServices = () => {
           {/* Enhanced Services Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             {visible.map((svc, idx) => {
-              const Icon = svc.icon;
+              const Icon = svc.icon || FaGlobe;
               return (
                 <div 
                   key={idx} 
@@ -95,9 +77,9 @@ const MobileOurServices = () => {
 
                   {/* Enhanced Title pill with glass-morphism */}
                   <Link href={svc.link}>
-                    <span className="relative bg-white/10 backdrop-blur-sm border border-white/20 w-60 h-[70px] flex items-center justify-center transition-all duration-300 text-white font-medium text-lg rounded-r-full hover:bg-white/20 hover:border-secondary/30 hover:scale-105 group">
+                    <span className="relative bg-secondary/10 backdrop-blur-sm border border-primary/20 w-60 h-[70px] flex items-center justify-center transition-all duration-300 text-primary font-medium text-lg rounded-r-full hover:bg-secondary/20 hover:border-primary/30 hover:scale-105 group">
                       {/* Enhanced Left arrow decoration - FIXED */}
-                      <span className="hidden xs:block absolute left-0 top-1/2 transform -translate-x-full -translate-y-1/2 border-t-[35px] border-t-transparent border-b-[35px] border-b-transparent border-r-[15px] border-r-white/10 group-hover:border-r-white/20 transition-all duration-300" />
+                      <span className="hidden xs:block absolute left-0 top-1/2 transform -translate-x-full -translate-y-1/2 border-t-[35px] border-t-transparent border-b-[35px] border-b-transparent border-r-[15px] border-r-primary/20 group-hover:border-r-primary/30 transition-all duration-300" />
                       
                       <span className="group-hover:text-secondary transition-colors duration-300">
                         {svc.title}
@@ -115,7 +97,7 @@ const MobileOurServices = () => {
           {/* Enhanced Description */}
           <div className="relative mb-8">
             <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary to-transparent rounded-full"></div>
-            <p className="text-white/90 pt-8 mb-6 pl-6 text-base sm:text-lg leading-relaxed animate-slide-up animation-delay-400">
+            <p className="text-primary/80 pt-8 mb-6 pl-6 text-base sm:text-lg leading-relaxed animate-slide-up animation-delay-400">
               With <span className="text-secondary font-medium">Codework</span>, adopting technology means embracing innovation with a personal touch. 
               Our commitment to excellence ensures every project is delivered with <span className="text-secondary font-medium">precision and care</span>.
             </p>
@@ -141,7 +123,7 @@ const MobileOurServices = () => {
                   className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full transition-all duration-300 ${
                     page === dot
                       ? "bg-gradient-to-r from-secondary to-secondary/80 scale-125 shadow-lg shadow-secondary/25"
-                      : "bg-white/30 hover:bg-white/50"
+                      : "bg-primary/30 hover:bg-primary/50"
                   }`}
                 />
               ))}

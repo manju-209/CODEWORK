@@ -49,7 +49,7 @@ const Footer = () => {
 
   const contactLinks = [
     { href: "https://cplc.codework.ai/courses", label: "Learn with Us" },
-    { href: "/build-your-career-with-codework", label: "Our Products" },
+    { href: "/products-we-build", label: "Our Products" },
   ];
 
   const serviceLinks = [
@@ -123,16 +123,27 @@ const Footer = () => {
             <ul className="max-sm:grid max-sm:grid-cols-3 max-sm:gap-2 max-sm:grid-rows-3 sm:space-y-2">
               {(isMobile ? allLinks : quickLinks).map((item) => (
                 <li key={`${item.href}-${item.label}`}>
-                  <Link
-                    href={item.href}
-                    className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
-                      pathname === item.href
-                        ? "text-primary"
-                        : "text-primary/90"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
+                  {item.href.startsWith("http") ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
+                        pathname === item.href ? "text-primary" : "text-primary/90"
+                      }`}
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
+                        pathname === item.href ? "text-primary" : "text-primary/90"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -143,16 +154,27 @@ const Footer = () => {
             <ul className="space-y-2 sm:pt-0 lg:pt-9 xl:pt-9">
               {contactLinks.map((item) => (
                 <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
-                      pathname === item.href
-                        ? "text-primary"
-                        : "text-primary/90"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
+                  {item.href.startsWith("http") ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
+                        pathname === item.href ? "text-primary" : "text-primary/90"
+                      }`}
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
+                        pathname === item.href ? "text-primary" : "text-primary/90"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -163,16 +185,27 @@ const Footer = () => {
             <ul className="space-y-2 sm:pt-0 lg:pt-9 xl:pt-9">
               {serviceLinks.map((item) => (
                 <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
-                      pathname === item.href
-                        ? "text-primary"
-                        : "text-primary/90"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
+                  {item.href.startsWith("http") ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
+                        pathname === item.href ? "text-primary" : "text-primary/90"
+                      }`}
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
+                        pathname === item.href ? "text-primary" : "text-primary/90"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -183,16 +216,27 @@ const Footer = () => {
             <ul className="space-y-2 sm:pt-0 lg:pt-9 xl:pt-9">
               {educationLinks.map((item) => (
                 <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
-                      pathname === item.href
-                        ? "text-primary"
-                        : "text-primary/90"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
+                  {item.href.startsWith("http") ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
+                        pathname === item.href ? "text-primary" : "text-primary/90"
+                      }`}
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
+                        pathname === item.href ? "text-primary" : "text-primary/90"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -203,16 +247,27 @@ const Footer = () => {
             <ul className="space-y-2 sm:pt-0 lg:pt-9 xl:pt-9">
               {dataSecurityLinks.map((item) => (
                 <li key={`${item.href}-${item.label}`}>
-                  <Link
-                    href={item.href}
-                    className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
-                      pathname === item.href
-                        ? "text-primary"
-                        : "text-primary/90"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
+                  {item.href.startsWith("http") ? (
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
+                        pathname === item.href ? "text-primary" : "text-primary/90"
+                      }`}
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className={`hover:text-primary transition duration-300 text-xs sm:text-sm ${
+                        pathname === item.href ? "text-primary" : "text-primary/90"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

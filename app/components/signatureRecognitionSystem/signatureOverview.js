@@ -23,12 +23,16 @@ function SignatureOverView() {
         
         {/* ==== Intro Section ==== */}
         <div className="mb-12">
+<<<<<<< HEAD
           <div className="inline-flex items-center border border-secondary/30 bg-primary/5 text-primary px-6 py-2 rounded-full text-sm font-medium mb-6">
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
             Signature Recognition System
           </div>
+=======
+          
+>>>>>>> newchange
           <h2 className="text-5xl font-bold text-primary mb-4">
-            Advanced Handwritten <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Signature Recognition System</span>
+            Advanced Handwritten <span className="bg-gradient-to-r from-primary via-primary-400 to-primary bg-clip-text text-transparent">Signature Recognition System</span>
           </h2>
           <p className="mt-4 text-primary/80 max-w-4xl leading-relaxed border-l-4 border-secondary/40 pl-6">
             Our Advanced Handwritten Signature Recognition System makes signature verification faster, smarter, 

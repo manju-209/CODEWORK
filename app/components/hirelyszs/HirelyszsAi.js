@@ -27,7 +27,7 @@ import {
 
 function HirelyszsAi() {
   return (
-    <div className="relative bg-primary min-h-screen overflow-hidden">
+    <div className="relative bg-secondary text-primary min-h-screen overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 md:w-40 md:h-40 bg-secondary/20 rounded-full"></div>
@@ -41,32 +41,32 @@ function HirelyszsAi() {
       {/* Floating Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-32 left-16 w-2 h-2 md:w-3 md:h-3 bg-secondary rounded-full animate-pulse"></div>
-        <div className="absolute top-48 right-20 w-1 h-1 md:w-2 md:h-2 bg-white/60 rounded-full animate-bounce"></div>
+        <div className="absolute top-48 right-20 w-1 h-1 md:w-2 md:h-2 bg-primary/40 rounded-full animate-bounce"></div>
         <div className="absolute bottom-56 left-1/4 w-3 h-3 md:w-4 md:h-4 bg-secondary/80 rounded-full animate-ping"></div>
-        <div className="absolute top-3/4 right-1/3 w-1 h-1 md:w-2 md:h-2 bg-white/40 rounded-full animate-pulse"></div>
+        <div className="absolute top-3/4 right-1/3 w-1 h-1 md:w-2 md:h-2 bg-primary/30 rounded-full animate-pulse"></div>
       </div>
 
       <div className="container mx-auto px-8 lg:px-16 relative z-10">
         {/* Enhanced Hero Section */}
         <div className="text-center mb-16 py-12">
-          <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-8">
+          <div className="inline-flex items-center border border-primary/30 bg-secondary/10 backdrop-blur-sm text-primary px-6 py-3 rounded-full text-sm font-medium mb-8">
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
             Intelligent AI Interview Platform
           </div>
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-            Hirelysze: <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Intelligent AI</span> Interview Platform
+          <h1 className="text-5xl lg:text-6xl font-bold text-primary mb-8 leading-tight">
+            Hirelysze: <span className="text-primary">Intelligent AI</span> Interview Platform
           </h1>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:bg-primary/50 transition-all duration-500 relative overflow-hidden">
+            <div className="bg-secondary/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 hover:bg-secondary/70 transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
               
-              <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <h2 className="text-2xl font-bold text-primary mb-6 flex items-center">
                 <span className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse"></span>
                 Why We Built Hirelysze
               </h2>
-              <p className="text-lg text-white/90 leading-relaxed text-justify">
-                We noticed that traditional interviews often consume too much time and lack consistency. Recruiters struggle to manage large volumes of applications, while candidates experience delayed feedback and subjective evaluations. We built <span className="text-secondary font-medium">Hirelysze</span> to address these gaps. It is designed to make interviews <span className="text-secondary font-medium">faster, more accurate, and bias free</span> by simulating human like conversations powered by AI and 3D technology. The goal is simple: to help recruiters find the right talent with speed and confidence.
+              <p className="text-lg text-primary/80 leading-relaxed text-justify">
+                We noticed that traditional interviews often consume too much time and lack consistency. Recruiters struggle to manage large volumes of applications, while candidates experience delayed feedback and subjective evaluations. We built <span className="text-primary font-medium">Hirelysze</span> to address these gaps. It is designed to make interviews <span className="text-primary font-medium">faster, more accurate, and bias free</span> by simulating human like conversations powered by AI and 3D technology. The goal is simple: to help recruiters find the right talent with speed and confidence.
               </p>
               
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/50 to-transparent"></div>
@@ -77,7 +77,7 @@ function HirelyszsAi() {
         {/* Enhanced Problems Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-6">
+            <h2 className="text-4xl font-bold text-primary mb-6">
               Common Challenges in Recruitment Interviews
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-secondary to-transparent mx-auto rounded-full"></div>
@@ -85,15 +85,15 @@ function HirelyszsAi() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Time Intensive Screening", desc: "Recruiters spend hours conducting repetitive first round interviews", icon: <FaComments className="text-secondary" /> },
-              { title: "Inconsistent Evaluation", desc: "Each interviewer assesses candidates differently, creating uneven results", icon: <FaUserTie className="text-secondary" /> },
-              { title: "Scheduling Difficulties", desc: "Coordinating times between candidates and interviewers is often complicated", icon: <FaClock className="text-secondary" /> },
-              { title: "Limited Insights", desc: "Traditional interviews rarely provide behavioral or emotional analysis", icon: <FaEyeSlash className="text-secondary" /> }
+              { title: "Time Intensive Screening", desc: "Recruiters spend hours conducting repetitive first round interviews", icon: <FaComments className="text-primary" /> },
+              { title: "Inconsistent Evaluation", desc: "Each interviewer assesses candidates differently, creating uneven results", icon: <FaUserTie className="text-primary" /> },
+              { title: "Scheduling Difficulties", desc: "Coordinating times between candidates and interviewers is often complicated", icon: <FaClock className="text-primary" /> },
+              { title: "Limited Insights", desc: "Traditional interviews rarely provide behavioral or emotional analysis", icon: <FaEyeSlash className="text-primary" /> }
             ].map((problem, index) => (
-              <div key={index} className="bg-primary/30 backdrop-blur-xl rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/10 hover:border-secondary/30 hover:bg-primary/40 group">
+              <div key={index} className="bg-secondary/60 backdrop-blur-xl rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 hover:border-primary/30 hover:bg-secondary/70 group">
                 <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{problem.icon}</div>
-                <h3 className="font-bold text-white mb-2">{problem.title}</h3>
-                <p className="text-white/80">{problem.desc}</p>
+                <h3 className="font-bold text-primary mb-2">{problem.title}</h3>
+                <p className="text-primary/70">{problem.desc}</p>
               </div>
             ))}
           </div>
@@ -108,11 +108,11 @@ function HirelyszsAi() {
                 alt="Hirelysze AI interview platform interface"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-primary/10 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
-              <div className="absolute bottom-6 left-6 text-white">
+              <div className="absolute bottom-6 left-6 text-primary">
                 <h3 className="text-xl font-bold mb-2">3D Virtual Interviewer</h3>
-                <p className="text-sm opacity-90 text-secondary">Lifelike AI-powered conversations</p>
+                <p className="text-sm opacity-90 text-primary/70">Lifelike AI-powered conversations</p>
               </div>
             </div>
             
@@ -122,11 +122,11 @@ function HirelyszsAi() {
                 alt="Hirelysze recruiter dashboard"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-primary/10 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
-              <div className="absolute bottom-6 left-6 text-white">
+              <div className="absolute bottom-6 left-6 text-primary">
                 <h3 className="text-xl font-bold mb-2">Real-Time Analytics</h3>
-                <p className="text-sm opacity-90 text-secondary">Data driven candidate insights</p>
+                <p className="text-sm opacity-90 text-primary/70">Data driven candidate insights</p>
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ function HirelyszsAi() {
         <div className="mb-20">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Our Strategy */}
-            <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:bg-primary/50 transition-all duration-500 relative overflow-hidden">
+            <div className="bg-secondary/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 hover:bg-secondary/70 transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
               
@@ -144,25 +144,25 @@ function HirelyszsAi() {
                 <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mr-4">
                   <FaBullseye className="text-primary text-xl" />
                 </div>
-                <h3 className="text-3xl font-bold text-white">Our Smarter Interview Solution</h3>
+                <h3 className="text-3xl font-bold text-primary">Our Smarter Interview Solution</h3>
               </div>
               
-              <p className="text-white/90 mb-6 text-lg">
-                <span className="text-secondary font-medium">Hirelysze</span> simplifies the recruitment process with an intelligent AI interviewer, a 3D virtual environment, and a real time analytics dashboard. It streamlines the interview flow for recruiters and provides an engaging experience for candidates:
+              <p className="text-primary/80 mb-6 text-lg">
+                <span className="text-primary font-medium">Hirelysze</span> simplifies the recruitment process with an intelligent AI interviewer, a 3D virtual environment, and a real time analytics dashboard. It streamlines the interview flow for recruiters and provides an engaging experience for candidates:
               </p>
               
-              <div className="space-y-4">
-                {[
-                  { title: "AI Interviewer", desc: "Conducts structured and conversational interviews using Natural Language Processing. Adjusts questions based on candidate responses and supports voice interactions", icon: <FaProjectDiagram className="text-secondary" /> },
-                  { title: "3D Virtual Interviewer", desc: "A lifelike 3D model acts as the interviewer avatar. AI synchronizes facial expressions, gestures, and lip movements with customizable appearance", icon: <FaTasks className="text-secondary" /> },
-                  { title: "Real Time Analysis", desc: "Evaluates tone, fluency, and clarity using speech recognition. Detects engagement through TensorFlow and FaceAPI with detailed performance scoring", icon: <FaUserClock className="text-secondary" /> },
-                  { title: "Recruiter Dashboard", desc: "Centralized platform to manage candidates with custom filters for role, AI score, emotional analysis, and skill match with visual reports", icon: <FaCalculator className="text-secondary" /> }
-                ].map((feature, index) => (
-                  <div key={index} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
+                <div className="space-y-4">
+                  {[
+                  { title: "AI Interviewer", desc: "Conducts structured and conversational interviews using Natural Language Processing. Adjusts questions based on candidate responses and supports voice interactions", icon: <FaProjectDiagram className="text-primary" /> },
+                  { title: "3D Virtual Interviewer", desc: "A lifelike 3D model acts as the interviewer avatar. AI synchronizes facial expressions, gestures, and lip movements with customizable appearance", icon: <FaTasks className="text-primary" /> },
+                  { title: "Real Time Analysis", desc: "Evaluates tone, fluency, and clarity using speech recognition. Detects engagement through TensorFlow and FaceAPI with detailed performance scoring", icon: <FaUserClock className="text-primary" /> },
+                  { title: "Recruiter Dashboard", desc: "Centralized platform to manage candidates with custom filters for role, AI score, emotional analysis, and skill match with visual reports", icon: <FaCalculator className="text-primary" /> }
+                  ].map((feature, index) => (
+                  <div key={index} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-secondary/10 transition-colors group">
                     <span className="text-2xl group-hover:scale-110 transition-transform duration-300">{feature.icon}</span>
                     <div>
-                      <h4 className="font-semibold text-white">{feature.title}</h4>
-                      <p className="text-white/80">{feature.desc}</p>
+                      <h4 className="font-semibold text-primary">{feature.title}</h4>
+                      <p className="text-primary/70">{feature.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -206,31 +206,31 @@ function HirelyszsAi() {
 
         {/* Enhanced Development Process */}
         <div className="mb-20">
-          <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 relative overflow-hidden">
+          <div className="bg-secondary/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 relative overflow-hidden">
             <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
             <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
             
             <div className="text-center mb-8">
-              <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center border border-primary/30 bg-secondary/10 backdrop-blur-sm text-primary px-6 py-3 rounded-full text-sm font-medium mb-6">
                 <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
                 Development Process
               </div>
-              <h3 className="text-3xl font-bold text-white mb-4">
+              <h3 className="text-3xl font-bold text-primary mb-4">
                 From Concept to Intelligent Interviewing
               </h3>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
               {[
-                { title: "AI and ML Integration", desc: "Integrated advanced NLP and TensorFlow models for real time voice and expression analysis", icon: <FaPuzzlePiece className="text-secondary" /> },
-                { title: "3D Modeling and Animation", desc: "Developed lifelike avatars with synchronized movements and expressions", icon: <FaCogs className="text-secondary" /> },
-                { title: "API Connectivity", desc: "Enabled smooth integration with HR and ATS systems", icon: <FaCommentDots className="text-secondary" /> },
-                { title: "Testing and Feedback", desc: "Improved the platform using feedback from recruiters and HR professionals", icon: <FaSyncAlt className="text-secondary" /> }
+                { title: "AI and ML Integration", desc: "Integrated advanced NLP and TensorFlow models for real time voice and expression analysis", icon: <FaPuzzlePiece className="text-primary" /> },
+                { title: "3D Modeling and Animation", desc: "Developed lifelike avatars with synchronized movements and expressions", icon: <FaCogs className="text-primary" /> },
+                { title: "API Connectivity", desc: "Enabled smooth integration with HR and ATS systems", icon: <FaCommentDots className="text-primary" /> },
+                { title: "Testing and Feedback", desc: "Improved the platform using feedback from recruiters and HR professionals", icon: <FaSyncAlt className="text-primary" /> }
               ].map((item, index) => (
-                <div key={index} className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-secondary/30 group">
+                <div key={index} className="text-center p-6 rounded-2xl bg-secondary/10 backdrop-blur-sm hover:bg-secondary/20 transition-all duration-300 border border-primary/10 hover:border-primary/30 group">
                   <div className="text-4xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
-                  <h4 className="font-bold text-white mb-2">{item.title}</h4>
-                  <p className="text-white/80 text-sm">{item.desc}</p>
+                  <h4 className="font-bold text-primary mb-2">{item.title}</h4>
+                  <p className="text-primary/70 text-sm">{item.desc}</p>
                 </div>
               ))}
             </div>

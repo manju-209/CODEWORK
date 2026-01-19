@@ -28,7 +28,7 @@ import {
 
 function WorklogixAi() {
   return (
-    <div className="relative bg-primary min-h-screen overflow-hidden">
+    <div className="relative bg-secondary text-primary min-h-screen overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 md:w-40 md:h-40 bg-secondary/20 rounded-full"></div>
@@ -43,33 +43,33 @@ function WorklogixAi() {
       {/* Floating Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-32 left-16 w-2 h-2 md:w-3 md:h-3 bg-secondary rounded-full animate-pulse"></div>
-        <div className="absolute top-48 right-20 w-1 h-1 md:w-2 md:h-2 bg-white/60 rounded-full animate-bounce"></div>
+        <div className="absolute top-48 right-20 w-1 h-1 md:w-2 md:h-2 bg-primary/40 rounded-full animate-bounce"></div>
         <div className="absolute bottom-56 left-1/4 w-3 h-3 md:w-4 md:h-4 bg-secondary/80 rounded-full animate-ping"></div>
-        <div className="absolute top-3/4 right-1/3 w-1 h-1 md:w-2 md:h-2 bg-white/40 rounded-full animate-pulse"></div>
+        <div className="absolute top-3/4 right-1/3 w-1 h-1 md:w-2 md:h-2 bg-primary/30 rounded-full animate-pulse"></div>
       </div>
 
 
       <div className="container mx-auto px-8 lg:px-16 relative z-10">
         {/* Enhanced Hero Section */}
         <div className="text-center mb-16 py-12">
-          <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-8">
+          <div className="inline-flex items-center border border-primary/30 bg-secondary/10 backdrop-blur-sm text-primary px-6 py-3 rounded-full text-sm font-medium mb-8">
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
             Task and Team Management Platform
           </div>
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-            WorkLogix: <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Smarter Task</span> and Team Management
+          <h1 className="text-5xl lg:text-6xl font-bold text-primary mb-8 leading-tight">
+            WorkLogix: <span className="text-primary">Smarter Task</span> and Team Management
           </h1>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:bg-primary/50 transition-all duration-500 relative overflow-hidden">
+            <div className="bg-secondary/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 hover:bg-secondary/70 transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
               
-              <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <h2 className="text-2xl font-bold text-primary mb-6 flex items-center">
                 <span className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse"></span>
                 Why We Built WorkLogix
               </h2>
-              <p className="text-lg text-white/90 leading-relaxed text-justify">
-  At <span className="text-secondary font-medium">Codework</span>, we saw how organizations struggle with scattered communication, missed deadlines, and unclear accountability. So, we built <span className="text-secondary font-medium">WorkLogix</span> — a web-based platform that brings leadership, managers, and employees together in one streamlined workspace. WorkLogix helps companies assign, monitor, and complete projects efficiently while giving leaders full visibility across teams.
+              <p className="text-lg text-primary/80 leading-relaxed text-justify">
+  At <span className="text-primary font-medium">Codework</span>, we saw how organizations struggle with scattered communication, missed deadlines, and unclear accountability. So, we built <span className="text-primary font-medium">WorkLogix</span> — a web-based platform that brings leadership, managers, and employees together in one streamlined workspace. WorkLogix helps companies assign, monitor, and complete projects efficiently while giving leaders full visibility across teams.
 </p>
 
               
@@ -82,7 +82,7 @@ function WorklogixAi() {
         {/* Enhanced Problems Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-6">
+            <h2 className="text-4xl font-bold text-primary mb-6">
               Common Workplace Challenges
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-secondary to-transparent mx-auto rounded-full"></div>
@@ -90,16 +90,16 @@ function WorklogixAi() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Scattered Communication", desc: "Too many chats, emails, and spreadsheets cause confusion", icon: <FaComments className="text-secondary" /> },
-              { title: "Unclear Responsibilities", desc: "Employees often don't know who's accountable for what", icon: <FaUserTie className="text-secondary" /> },
-              { title: "Manual Tracking", desc: "Leaders spend hours tracking progress and hours worked", icon: <FaClock className="text-secondary" /> },
-              { title: "Lack of Transparency", desc: "Teams miss updates or duplicate efforts", icon: <FaEyeSlash className="text-secondary" /> },
-              { title: "Limited Insights", desc: "Without real-time data, it's hard to make informed decisions", icon: <FaChartLine className="text-secondary" /> }
+              { title: "Scattered Communication", desc: "Too many chats, emails, and spreadsheets cause confusion", icon: <FaComments className="text-primary" /> },
+              { title: "Unclear Responsibilities", desc: "Employees often don't know who's accountable for what", icon: <FaUserTie className="text-primary" /> },
+              { title: "Manual Tracking", desc: "Leaders spend hours tracking progress and hours worked", icon: <FaClock className="text-primary" /> },
+              { title: "Lack of Transparency", desc: "Teams miss updates or duplicate efforts", icon: <FaEyeSlash className="text-primary" /> },
+              { title: "Limited Insights", desc: "Without real-time data, it's hard to make informed decisions", icon: <FaChartLine className="text-primary" /> }
             ].map((problem, index) => (
-              <div key={index} className="bg-primary/30 backdrop-blur-xl rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/10 hover:border-secondary/30 hover:bg-primary/40 group">
+              <div key={index} className="bg-secondary/60 backdrop-blur-xl rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 hover:border-primary/30 hover:bg-secondary/70 group">
                 <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{problem.icon}</div>
-                <h3 className="font-bold text-white mb-2">{problem.title}</h3>
-                <p className="text-white/80">{problem.desc}</p>
+                <h3 className="font-bold text-primary mb-2">{problem.title}</h3>
+                <p className="text-primary/70">{problem.desc}</p>
               </div>
             ))}
           </div>
@@ -115,11 +115,11 @@ function WorklogixAi() {
                 alt="WorkLogix dashboard interface"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-primary/10 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
-              <div className="absolute bottom-6 left-6 text-white">
+              <div className="absolute bottom-6 left-6 text-primary">
                 <h3 className="text-xl font-bold mb-2">Unified Workspace</h3>
-                <p className="text-sm opacity-90 text-secondary">All teams in one platform</p>
+                <p className="text-sm opacity-90 text-primary/70">All teams in one platform</p>
               </div>
             </div>
             
@@ -129,11 +129,11 @@ function WorklogixAi() {
                 alt="WorkLogix project management view"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-primary/10 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
-              <div className="absolute bottom-6 left-6 text-white">
+              <div className="absolute bottom-6 left-6 text-primary">
                 <h3 className="text-xl font-bold mb-2">Real-Time Tracking</h3>
-                <p className="text-sm opacity-90 text-secondary">Monitor progress instantly</p>
+                <p className="text-sm opacity-90 text-primary/70">Monitor progress instantly</p>
               </div>
             </div>
           </div>
@@ -144,7 +144,7 @@ function WorklogixAi() {
         <div className="mb-20">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Our Strategy */}
-            <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:bg-primary/50 transition-all duration-500 relative overflow-hidden">
+            <div className="bg-secondary/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 hover:bg-secondary/70 transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
               
@@ -152,25 +152,25 @@ function WorklogixAi() {
                 <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mr-4">
                   <FaBullseye className="text-primary text-xl" />
                 </div>
-                <h3 className="text-3xl font-bold text-white">Our Smarter Workflow Solution</h3>
+                <h3 className="text-3xl font-bold text-primary">Our Smarter Workflow Solution</h3>
               </div>
               
-              <p className="text-white/90 mb-6 text-lg">
-                <span className="text-secondary font-medium">WorkLogix</span> is designed to solve these issues with role-based access and structured workflows for every level of your organization:
+              <p className="text-primary/80 mb-6 text-lg">
+                <span className="text-primary font-medium">WorkLogix</span> is designed to solve these issues with role-based access and structured workflows for every level of your organization:
               </p>
               
-              <div className="space-y-4">
-                {[
-                  { title: "Leadership Dashboard", desc: "Oversee organization-wide performance, assign projects to managers, and monitor progress instantly", icon: <FaProjectDiagram className="text-secondary" /> },
-                  { title: "Project Manager Control", desc: "Create and manage projects, assign tasks to employees, and ensure timely completion through live progress tracking", icon: <FaTasks className="text-secondary" /> },
-                  { title: "Employee Workspace", desc: "View assigned tasks, update status, and log working hours seamlessly", icon: <FaUserClock className="text-secondary" /> },
-                  { title: "Accountant Console", desc: "Track project costs, manage rates, and generate financial reports with ease", icon: <FaCalculator className="text-secondary" /> }
-                ].map((feature, index) => (
-                  <div key={index} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
+                <div className="space-y-4">
+                  {[
+                  { title: "Leadership Dashboard", desc: "Oversee organization-wide performance, assign projects to managers, and monitor progress instantly", icon: <FaProjectDiagram className="text-primary" /> },
+                  { title: "Project Manager Control", desc: "Create and manage projects, assign tasks to employees, and ensure timely completion through live progress tracking", icon: <FaTasks className="text-primary" /> },
+                  { title: "Employee Workspace", desc: "View assigned tasks, update status, and log working hours seamlessly", icon: <FaUserClock className="text-primary" /> },
+                  { title: "Accountant Console", desc: "Track project costs, manage rates, and generate financial reports with ease", icon: <FaCalculator className="text-primary" /> }
+                  ].map((feature, index) => (
+                  <div key={index} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-secondary/10 transition-colors group">
                     <span className="text-2xl group-hover:scale-110 transition-transform duration-300">{feature.icon}</span>
                     <div>
-                      <h4 className="font-semibold text-white">{feature.title}</h4>
-                      <p className="text-white/80">{feature.desc}</p>
+                      <h4 className="font-semibold text-primary">{feature.title}</h4>
+                      <p className="text-primary/70">{feature.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -215,31 +215,31 @@ function WorklogixAi() {
 
         {/* Enhanced Development Process */}
         <div className="mb-20">
-          <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 relative overflow-hidden">
+          <div className="bg-secondary/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 relative overflow-hidden">
             <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
             <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
             
             <div className="text-center mb-8">
-              <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center border border-primary/30 bg-secondary/10 backdrop-blur-sm text-primary px-6 py-3 rounded-full text-sm font-medium mb-6">
                 <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
                 Development Process
               </div>
-              <h3 className="text-3xl font-bold text-white mb-4">
+              <h3 className="text-3xl font-bold text-primary mb-4">
                 How We Built It Fast and Scalable
               </h3>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
               {[
-                { title: "Modular Architecture", desc: "Built with flexibility to scale across multiple departments", icon: <FaPuzzlePiece className="text-secondary" /> },
-                { title: "API Integrations", desc: "Connects seamlessly with HR, finance, and communication tools", icon: <FaCogs className="text-secondary" /> },
-                { title: "User-Centric Testing", desc: "Refined with feedback from project managers and employees", icon: <FaCommentDots className="text-secondary" /> },
-                { title: "Automated Reporting", desc: "Generates visual reports for productivity and time tracking", icon: <FaSyncAlt className="text-secondary" /> }
+                { title: "Modular Architecture", desc: "Built with flexibility to scale across multiple departments", icon: <FaPuzzlePiece className="text-primary" /> },
+                { title: "API Integrations", desc: "Connects seamlessly with HR, finance, and communication tools", icon: <FaCogs className="text-primary" /> },
+                { title: "User-Centric Testing", desc: "Refined with feedback from project managers and employees", icon: <FaCommentDots className="text-primary" /> },
+                { title: "Automated Reporting", desc: "Generates visual reports for productivity and time tracking", icon: <FaSyncAlt className="text-primary" /> }
               ].map((item, index) => (
-                <div key={index} className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-secondary/30 group">
+                <div key={index} className="text-center p-6 rounded-2xl bg-secondary/10 backdrop-blur-sm hover:bg-secondary/20 transition-all duration-300 border border-primary/10 hover:border-primary/30 group">
                   <div className="text-4xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
-                  <h4 className="font-bold text-white mb-2">{item.title}</h4>
-                  <p className="text-white/80 text-sm">{item.desc}</p>
+                  <h4 className="font-bold text-primary mb-2">{item.title}</h4>
+                  <p className="text-primary/70 text-sm">{item.desc}</p>
                 </div>
               ))}
             </div>

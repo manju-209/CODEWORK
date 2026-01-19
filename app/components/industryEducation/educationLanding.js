@@ -4,20 +4,23 @@ import React from "react";
 const EducationLanding = () => {
   return (
     <section className="relative w-full min-h-screen flex items-center bg-primary overflow-hidden">
-      {/* Background Decorative Circles */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-40 h-40 bg-secondary/20 rounded-full"></div>
-        <div className="absolute top-1/3 right-24 w-24 h-24 bg-secondary/15 rounded-full"></div>
-        <div className="absolute bottom-40 left-1/3 w-48 h-48 bg-secondary/25 rounded-full"></div>
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source
+            src="https://codework-ebook.s3.amazonaws.com/codework-media/Industries_videos/school.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div className="absolute inset-0 bg-primary/70" />
       </div>
 
-      {/* Floating Animated Dots */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-28 left-16 w-2 h-2 md:w-3 md:h-3 bg-secondary rounded-full animate-pulse"></div>
-        <div className="absolute top-48 right-20 w-1 h-1 md:w-2 md:h-2 bg-white/60 rounded-full animate-bounce"></div>
-        <div className="absolute bottom-56 left-1/4 w-3 h-3 md:w-4 md:h-4 bg-secondary/80 rounded-full animate-ping"></div>
-        <div className="absolute top-3/4 right-1/3 w-1 h-1 md:w-2 md:h-2 bg-white/40 rounded-full animate-pulse"></div>
-      </div>
 
       {/* Main Content Container */}
       <div className="relative z-10 w-[80%] mx-auto px-4 text-left">

@@ -1,7 +1,8 @@
 const DEFAULT_TIMEOUT_MS = 15000;
 
-const API_BASE_URL =
-  process.env.NEXT_PUBLIC_CHATBOT_API_BASE_URL || "http://192.168.0.94:8000";
+const API_ENDPOINT =
+  process.env.NEXT_PUBLIC_CHATBOT_API_ENDPOINT ||
+  "https://prod-api.codework.ai/api/v1/chat";
 
 const API_PATH = "/api/v1/chat";
 
@@ -107,7 +108,7 @@ export async function callChatbotApi(question, options = {}) {
   let response;
 
   try {
-    response = await fetch(`${API_BASE_URL}${API_PATH}`, {
+    response = await fetch(API_ENDPOINT, {
       method: "POST",
       headers,
       body: JSON.stringify({ query, question: query }),

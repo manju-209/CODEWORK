@@ -20,14 +20,14 @@ const ManagementTeam = () => {
       name: 'Trinita Rex',
       title: 'Director of Business Development',
       imgSrc: 'https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/our_team/tirinita.png',
-      linkedinUrl: 'https://www.linkedin.com/in/keerthika-mathi-68633419a/'
+      linkedinUrl: 'https://www.linkedin.com/in/trinita-rex/'
     },
 
     {
       name: 'Archana Arun',
       title: 'Director',
       imgSrc: 'https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/our_team/archana.JPG',
-      linkedinUrl: 'https://www.linkedin.com/in'
+      linkedinUrl: 'https://www.linkedin.com/company/codeworkai'
     },
     {
       name: 'Senthil Kumar',

@@ -15,7 +15,6 @@ import {
   FaBullhorn,
 } from "react-icons/fa";
 import { BiSync } from "react-icons/bi";
-import MobileOurServices from "./mobileOurServices";
 
 export const servicesData = [
   {
@@ -108,7 +107,7 @@ export const servicesData = [
     description:
       "Codework offers Data Science & Analytics services to help you make data-driven decisions.",
     icon: FaCode,
-    link: "/data-science-analytics",
+    link: "/predictive-analytics",
     image: "https://codework-ebook.s3.us-east-1.amazonaws.com/codework-media/services/DataScience.jpg",
   },
 ];
@@ -116,33 +115,11 @@ export const servicesData = [
 const OurServices = () => {
   const services = servicesData;
 
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    if (typeof window !== "undefined") {
-      window.addEventListener("resize", handleResize);
-      handleResize();
-    }
-
-    return () => {
-      if (typeof window !== "undefined") {
-        window.removeEventListener("resize", handleResize);
-      }
-    };
-  }, []);
-
   return (
     <div className="w-full">
-      {isMobile ? (
-        <MobileOurServices />
-      ) : (
-        <div className="bg-secondary text-primary py-8 sm:py-12 md:py-16 px-3 sm:px-4 md:px-6 lg:px-8 relative overflow-hidden">
+      <div className="bg-secondary text-primary py-8 sm:py-12 md:py-16 px-3 sm:px-4 md:px-6 lg:px-8 relative overflow-hidden">
 
-          <div className="max-w-7xl mx-auto relative z-10">
+        <div className="max-w-7xl mx-auto relative z-10">
             {/* Enhanced Header Section */}
             <div className="text-center mb-12 sm:mb-16 md:mb-20">
 
@@ -337,8 +314,7 @@ const OurServices = () => {
               animation-delay: 4s;
             }
           `}</style>
-        </div>
-      )}
+      </div>
     </div>
   );
 };

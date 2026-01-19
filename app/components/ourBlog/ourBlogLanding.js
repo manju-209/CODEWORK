@@ -3,32 +3,28 @@ import React from "react";
 
 const OurBlogLanding = () => {
   return (
-    <section className="relative w-full h-auto sm:h-[80vh] md:h-screen flex items-center bg-primary text-secondary overflow-hidden">
+    <section className="relative w-full min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh] lg:h-screen flex items-center bg-primary text-secondary overflow-hidden">
 
-
-      {/* Enhanced Content Container */}
-      <div className="relative z-10 w-[80%] mx-auto px-4 mt-16 sm:mt-0 lg:mt-0 flex flex-col md:flex-row items-center justify-between">
+      {/* Content Container */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 pt-16 sm:pt-20 md:pt-0 pb-24 sm:pb-28 md:pb-32 lg:pb-20 flex flex-col items-center justify-center">
         
-        {/* Enhanced Left: Content */}
-        <div className="w-full md:w-3/5 text-left animate-slide-up">
+        {/* Content */}
+        <div className="w-full text-left md:text-left">
           
-
-          <div className="heading-container mb-8">
-            <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-secondary">
+          <div className="heading-container mb-6 sm:mb-7 md:mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-secondary">
               <span className="text-secondary">Our </span>
-              <span className="text-secondary">
-                blogs
-              </span>
+              <span className="text-secondary">blogs</span>
             </h1>
             
             {/* Decorative underline */}
-            <div className="w-32 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mt-4"></div>
+            <div className="w-24 sm:w-28 md:w-32 h-1 bg-gradient-to-r from-secondary to-transparent rounded-full mt-3 sm:mt-4"></div>
           </div>
 
-          <div className="paragraph-container mb-12">
+          <div className="paragraph-container mb-8 sm:mb-10 md:mb-12">
             <div className="relative">
-              <p className="text-lg sm:text-lg md:text-lg lg:text-lg xl:text-xl leading-relaxed text-secondary/90 pl-6 font-light">
-                Stay updated with the latest <span className=" font-medium">news and insights</span> from our blog.
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-secondary/90 pl-4 sm:pl-5 md:pl-6 font-light">
+                Stay updated with the latest <span className="font-medium">news and insights</span> from our blog.
               </p>
             </div>
           </div>
@@ -36,23 +32,23 @@ const OurBlogLanding = () => {
     
       </div>
 
-      {/* Enhanced Statistics */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-8 animate-slide-up animation-delay-800">
+      {/* Statistics - Responsive Positioning */}
+      <div className="absolute bottom-6 sm:bottom-8 md:bottom-10 lg:bottom-12 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 px-4">
         <div className="text-center">
-          <div className="text-2xl font-bold text-secondary">50+</div>
-          <div className="text-secondary/80 text-sm">Articles</div>
+          <div className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary">50+</div>
+          <div className="text-secondary/80 text-xs sm:text-sm md:text-base">Articles</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl font-bold text-secondary">10K+</div>
-          <div className="text-secondary/80 text-sm">Readers</div>
+          <div className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary">10K+</div>
+          <div className="text-secondary/80 text-xs sm:text-sm md:text-base">Readers</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl font-bold text-secondary">Weekly</div>
-          <div className="text-secondary/80 text-sm">Updates</div>
+          <div className="text-xl sm:text-2xl md:text-3xl font-bold text-secondary">Weekly</div>
+          <div className="text-secondary/80 text-xs sm:text-sm md:text-base">Updates</div>
         </div>
       </div>
 
-      {/* Enhanced CSS Animations */}
+      {/* CSS Animations */}
       <style jsx>{`
         @keyframes blob {
           0% {

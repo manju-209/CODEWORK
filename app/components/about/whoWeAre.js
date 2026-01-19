@@ -29,9 +29,6 @@ const WhoWeAre = () => {
             <p className="text-secondary/90 text-base md:text-lg leading-relaxed">
               We specialize in crafting innovative AI-based products tailored to your business needs. From development to deployment, we ensure seamless technology integration. We design solutions that prioritize user experience and real-world impact, leveraging proven technologies like React.js, Java, Python, Azure, AWS, R, and Next.js.
             </p>
-            <Link href="/about-us" className="inline-flex items-center px-6 py-3 border-2 border-secondary text-secondary rounded-none">
-              Learn more
-            </Link>
           </div>
           <div>
             <img
@@ -58,9 +55,6 @@ const WhoWeAre = () => {
             <p className="text-secondary/90 text-base md:text-lg leading-relaxed">
               Our vision is to lead the way in delivering innovative and transformative technology solutions that reshape industries and empower businesses globally. We strive to create a future where our software and services drive digital transformation, helping organizations optimize operations, boost efficiency, and unlock new growth opportunities.
             </p>
-            <Link href="/join-our-team" className="inline-flex items-center px-6 py-3 border-2 border-secondary text-secondary rounded-none">
-              Learn more
-            </Link>
           </div>
         </div>
 

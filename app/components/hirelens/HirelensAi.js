@@ -29,7 +29,7 @@ import {
 
 function HirelensAi() {
   return (
-    <div className="relative bg-primary min-h-screen overflow-hidden">
+    <div className="relative bg-secondary text-primary min-h-screen overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 md:w-40 md:h-40 bg-secondary/20 rounded-full"></div>
@@ -45,9 +45,9 @@ function HirelensAi() {
       {/* Floating Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-32 left-16 w-2 h-2 md:w-3 md:h-3 bg-secondary rounded-full animate-pulse"></div>
-        <div className="absolute top-48 right-20 w-1 h-1 md:w-2 md:h-2 bg-white/60 rounded-full animate-bounce"></div>
+        <div className="absolute top-48 right-20 w-1 h-1 md:w-2 md:h-2 bg-primary/40 rounded-full animate-bounce"></div>
         <div className="absolute bottom-56 left-1/4 w-3 h-3 md:w-4 md:h-4 bg-secondary/80 rounded-full animate-ping"></div>
-        <div className="absolute top-3/4 right-1/3 w-1 h-1 md:w-2 md:h-2 bg-white/40 rounded-full animate-pulse"></div>
+        <div className="absolute top-3/4 right-1/3 w-1 h-1 md:w-2 md:h-2 bg-primary/30 rounded-full animate-pulse"></div>
       </div>
 
 
@@ -55,24 +55,24 @@ function HirelensAi() {
       <div className="container mx-auto px-8 lg:px-16 relative z-10">
         {/* Enhanced Hero Section */}
         <div className="text-center mb-16 py-12">
-          <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-8">
+          <div className="inline-flex items-center border border-primary/30 bg-secondary/10 backdrop-blur-sm text-primary px-6 py-3 rounded-full text-sm font-medium mb-8">
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
             Secure Online Interview and Exam Proctoring
           </div>
-          <h1 className="text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-            HireLens: <span className="bg-gradient-to-r from-secondary via-cyan-400 to-secondary bg-clip-text text-transparent">Secure Online</span> Interview and Exam Proctoring
+          <h1 className="text-5xl lg:text-6xl font-bold text-primary mb-8 leading-tight">
+            HireLens: <span className="text-primary">Secure Online</span> Interview and Exam Proctoring
           </h1>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:bg-primary/50 transition-all duration-500 relative overflow-hidden">
+            <div className="bg-secondary/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 hover:bg-secondary/70 transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
               
-              <h2 className="text-2xl font-bold text-white mb-6 flex items-center">
+              <h2 className="text-2xl font-bold text-primary mb-6 flex items-center">
                 <span className="w-3 h-3 bg-secondary rounded-full mr-3 animate-pulse"></span>
                 Why We Built HireLens
               </h2>
-              <p className="text-lg text-white/90 leading-relaxed text-justify">
-                Many organizations struggle to run reliable remote assessments. Scheduling conflicts, manual monitoring, inconsistent evaluations, and risk of malpractice make remote hiring stressful for recruiters and candidates. We built <span className="text-secondary font-medium">HireLens</span> to provide a secure, scalable, and automated way to run remote interviews and exams. The platform reduces manual effort, improves transparency, and protects exam integrity.
+              <p className="text-lg text-primary/80 leading-relaxed text-justify">
+                Many organizations struggle to run reliable remote assessments. Scheduling conflicts, manual monitoring, inconsistent evaluations, and risk of malpractice make remote hiring stressful for recruiters and candidates. We built <span className="text-primary font-medium">HireLens</span> to provide a secure, scalable, and automated way to run remote interviews and exams. The platform reduces manual effort, improves transparency, and protects exam integrity.
               </p>
               
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-secondary/50 to-transparent"></div>
@@ -85,7 +85,7 @@ function HirelensAi() {
         {/* Enhanced Problems Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-white mb-6">
+            <h2 className="text-4xl font-bold text-primary mb-6">
               Common Recruitment and Exam Challenges
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-secondary to-transparent mx-auto rounded-full"></div>
@@ -93,16 +93,16 @@ function HirelensAi() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Manual Review Bottlenecks", desc: "Large candidate volumes create manual review bottlenecks", icon: <FaUsers className="text-secondary" /> },
-              { title: "Scheduling Conflicts", desc: "Coordinating schedules for live interviews is time consuming", icon: <FaClock className="text-secondary" /> },
-              { title: "Exam Integrity Risks", desc: "Remote tests risk integrity issues without continuous monitoring", icon: <FaEyeSlash className="text-secondary" /> },
-              { title: "Unstructured Data", desc: "Unstructured data and missing logs make audits difficult", icon: <FaChartLine className="text-secondary" /> },
-              { title: "Poor Communication", desc: "Poor candidate communication harms the employer brand", icon: <FaEnvelope className="text-secondary" /> }
+              { title: "Manual Review Bottlenecks", desc: "Large candidate volumes create manual review bottlenecks", icon: <FaUsers className="text-primary" /> },
+              { title: "Scheduling Conflicts", desc: "Coordinating schedules for live interviews is time consuming", icon: <FaClock className="text-primary" /> },
+              { title: "Exam Integrity Risks", desc: "Remote tests risk integrity issues without continuous monitoring", icon: <FaEyeSlash className="text-primary" /> },
+              { title: "Unstructured Data", desc: "Unstructured data and missing logs make audits difficult", icon: <FaChartLine className="text-primary" /> },
+              { title: "Poor Communication", desc: "Poor candidate communication harms the employer brand", icon: <FaEnvelope className="text-primary" /> }
             ].map((problem, index) => (
-              <div key={index} className="bg-primary/30 backdrop-blur-xl rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-white/10 hover:border-secondary/30 hover:bg-primary/40 group">
+              <div key={index} className="bg-secondary/60 backdrop-blur-xl rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 border border-primary/10 hover:border-primary/30 hover:bg-secondary/70 group">
                 <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{problem.icon}</div>
-                <h3 className="font-bold text-white mb-2">{problem.title}</h3>
-                <p className="text-white/80">{problem.desc}</p>
+                <h3 className="font-bold text-primary mb-2">{problem.title}</h3>
+                <p className="text-primary/70">{problem.desc}</p>
               </div>
             ))}
           </div>
@@ -119,11 +119,11 @@ function HirelensAi() {
                 alt="HireLens proctoring interface"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-primary/10 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
-              <div className="absolute bottom-6 left-6 text-white">
+              <div className="absolute bottom-6 left-6 text-primary">
                 <h3 className="text-xl font-bold mb-2">Camera Monitoring</h3>
-                <p className="text-sm opacity-90 text-secondary">Continuous candidate visibility</p>
+                <p className="text-sm opacity-90 text-primary/70">Continuous candidate visibility</p>
               </div>
             </div>
             
@@ -133,11 +133,11 @@ function HirelensAi() {
                 alt="HireLens exam management view"
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 via-primary/10 to-transparent"></div>
               <div className="absolute inset-0 rounded-3xl border-2 border-secondary/30 group-hover:border-secondary/50 transition-all duration-500"></div>
-              <div className="absolute bottom-6 left-6 text-white">
+              <div className="absolute bottom-6 left-6 text-primary">
                 <h3 className="text-xl font-bold mb-2">Real-Time Detection</h3>
-                <p className="text-sm opacity-90 text-secondary">Automated malpractice alerts</p>
+                <p className="text-sm opacity-90 text-primary/70">Automated malpractice alerts</p>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ function HirelensAi() {
         <div className="mb-20">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Our Strategy */}
-            <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 hover:bg-primary/50 transition-all duration-500 relative overflow-hidden">
+            <div className="bg-secondary/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 hover:bg-secondary/70 transition-all duration-500 relative overflow-hidden">
               <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
               <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
               
@@ -157,25 +157,25 @@ function HirelensAi() {
                 <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center mr-4">
                   <FaBullseye className="text-primary text-xl" />
                 </div>
-                <h3 className="text-3xl font-bold text-white">Our Smarter Proctoring Solution</h3>
+                <h3 className="text-3xl font-bold text-primary">Our Smarter Proctoring Solution</h3>
               </div>
               
-              <p className="text-white/90 mb-6 text-lg">
-                <span className="text-secondary font-medium">HireLens</span> combines camera based monitoring, behavior detection, and centralized reporting in a unified platform. It automates exam creation, delivers secure access with unique exam codes, detects suspicious behavior in real time, and produces clear reports for recruiter review.
+              <p className="text-primary/80 mb-6 text-lg">
+                <span className="text-primary font-medium">HireLens</span> combines camera based monitoring, behavior detection, and centralized reporting in a unified platform. It automates exam creation, delivers secure access with unique exam codes, detects suspicious behavior in real time, and produces clear reports for recruiter review.
               </p>
               
               <div className="space-y-4">
                 {[
-                  { title: "HR Team Control", desc: "Creates and schedules exams, receives unique exam codes, monitors candidate performance and reviews flagged activity", icon: <FaUserShield className="text-secondary" /> },
-                  { title: "Automated Notifications", desc: "System sends exam codes to candidates automatically and notifies both HR and candidates", icon: <FaBell className="text-secondary" /> },
-                  { title: "Candidate Workspace", desc: "Candidates join using exam codes, keep camera on during entire exam, and complete tests while system logs activity", icon: <FaLaptopCode className="text-secondary" /> },
-                  { title: "Real-Time Detection", desc: "Automatically flags face not visible, tab switching, and multiple faces with instant logging", icon: <FaCamera className="text-secondary" /> }
+                  { title: "HR Team Control", desc: "Creates and schedules exams, receives unique exam codes, monitors candidate performance and reviews flagged activity", icon: <FaUserShield className="text-primary" /> },
+                  { title: "Automated Notifications", desc: "System sends exam codes to candidates automatically and notifies both HR and candidates", icon: <FaBell className="text-primary" /> },
+                  { title: "Candidate Workspace", desc: "Candidates join using exam codes, keep camera on during entire exam, and complete tests while system logs activity", icon: <FaLaptopCode className="text-primary" /> },
+                  { title: "Real-Time Detection", desc: "Automatically flags face not visible, tab switching, and multiple faces with instant logging", icon: <FaCamera className="text-primary" /> }
                 ].map((feature, index) => (
-                  <div key={index} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-white/5 transition-colors group">
+                  <div key={index} className="flex items-start space-x-3 p-3 rounded-xl hover:bg-secondary/10 transition-colors group">
                     <span className="text-2xl group-hover:scale-110 transition-transform duration-300">{feature.icon}</span>
                     <div>
-                      <h4 className="font-semibold text-white">{feature.title}</h4>
-                      <p className="text-white/80">{feature.desc}</p>
+                      <h4 className="font-semibold text-primary">{feature.title}</h4>
+                      <p className="text-primary/70">{feature.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -222,31 +222,31 @@ function HirelensAi() {
 
         {/* Enhanced Development Process */}
         <div className="mb-20">
-          <div className="bg-primary/40 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-white/20 relative overflow-hidden">
+          <div className="bg-secondary/60 backdrop-blur-xl rounded-3xl p-8 shadow-2xl border border-primary/20 relative overflow-hidden">
             <div className="absolute -top-2 -left-2 w-8 h-8 border-l-4 border-t-4 border-secondary rounded-tl-2xl opacity-60"></div>
             <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-4 border-b-4 border-secondary rounded-br-2xl opacity-60"></div>
             
             <div className="text-center mb-8">
-              <div className="inline-flex items-center border border-secondary/30 bg-white/5 backdrop-blur-sm text-secondary px-6 py-3 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center border border-primary/30 bg-secondary/10 backdrop-blur-sm text-primary px-6 py-3 rounded-full text-sm font-medium mb-6">
                 <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
                 Core Features
               </div>
-              <h3 className="text-3xl font-bold text-white mb-4">
+              <h3 className="text-3xl font-bold text-primary mb-4">
                 Built for Security and Scalability
               </h3>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
               {[
-                { title: "Exam Creation", desc: "Online exam creation with notifications enabling HR to create and manage tests", icon: <FaTasks className="text-secondary" /> },
-                { title: "Real-Time Logging", desc: "Tracks tab changes, key presses, and behavior events instantly", icon: <FaSyncAlt className="text-secondary" /> },
-                { title: "Encrypted Security", desc: "All candidate data encrypted during transmission and at rest", icon: <FaLock className="text-secondary" /> },
-                { title: "Audit Reports", desc: "Detailed logs and reports support compliance and review", icon: <FaClipboardCheck className="text-secondary" /> }
+                { title: "Exam Creation", desc: "Online exam creation with notifications enabling HR to create and manage tests", icon: <FaTasks className="text-primary" /> },
+                { title: "Real-Time Logging", desc: "Tracks tab changes, key presses, and behavior events instantly", icon: <FaSyncAlt className="text-primary" /> },
+                { title: "Encrypted Security", desc: "All candidate data encrypted during transmission and at rest", icon: <FaLock className="text-primary" /> },
+                { title: "Audit Reports", desc: "Detailed logs and reports support compliance and review", icon: <FaClipboardCheck className="text-primary" /> }
               ].map((item, index) => (
-                <div key={index} className="text-center p-6 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-secondary/30 group">
+                <div key={index} className="text-center p-6 rounded-2xl bg-secondary/10 backdrop-blur-sm hover:bg-secondary/20 transition-all duration-300 border border-primary/10 hover:border-primary/30 group">
                   <div className="text-4xl mb-4 flex justify-center group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
-                  <h4 className="font-bold text-white mb-2">{item.title}</h4>
-                  <p className="text-white/80 text-sm">{item.desc}</p>
+                  <h4 className="font-bold text-primary mb-2">{item.title}</h4>
+                  <p className="text-primary/70 text-sm">{item.desc}</p>
                 </div>
               ))}
             </div>

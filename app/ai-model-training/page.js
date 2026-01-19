@@ -1,16 +1,15 @@
-import React from 'react'
-import AiModelLAnding from '../components/aiModelTraining/aiModelLanding'
-import OurAiModelProcess from '../components/aiModelTraining/ourAiModelProcess'
-import GetStarted from '../components/aiModelTraining/getStarted'
+'use client';
 
-const page = () => {
+import AiModelLanding from '../components/aiModelTraining/aiModelLanding';
+import OurAiModelProcess from '../components/aiModelTraining/ourAiModelProcess';
+import GetStarted from '../components/aiModelTraining/getStarted';
+
+export default function Page() {
   return (
     <div>
-<AiModelLAnding/>
-<OurAiModelProcess/>
-<GetStarted/>
+      <AiModelLanding />
+      <OurAiModelProcess />
+      <GetStarted />
     </div>
-  )
+  );
 }
-
-export default page
